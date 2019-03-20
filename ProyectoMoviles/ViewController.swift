@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ProyectoMoviles
 //
-//  Created by Alister Estrada Cueto on 3/19/19.
+//  Created by Alister Estrada Cueto and Martín Anzures on 3/19/19.
 //  Copyright © 2019 Alister Estrada Cueto. All rights reserved.
 //
 
