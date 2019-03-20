@@ -3,7 +3,7 @@
 //  ProyectoMoviles
 //
 //  Created by Alister Estrada Cueto and Martín Anzures on 3/19/19.
-// Huevos profe
+// Huevos profe 2 y MArtin
 //  Copyright © 2019 Alister Estrada Cueto. All rights reserved.
 //
 
