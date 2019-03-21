@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35398F232243A66500375421 /* CrearProyectoViewController.swift */; };
+		359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */; };
+		359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */; };
 		35ED97762240DC130032088C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97752240DC130032088C /* AppDelegate.swift */; };
 		35ED97782240DC130032088C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97772240DC130032088C /* ViewController.swift */; };
 		35ED977B2240DC130032088C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED97792240DC130032088C /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35398F232243A66500375421 /* CrearProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProyectoViewController.swift; sourceTree = "<group>"; };
+		359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoCreadoViewController.swift; sourceTree = "<group>"; };
+		359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoProyectoViewController.swift; sourceTree = "<group>"; };
 		35ED97722240DC130032088C /* ProyectoMoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED97752240DC130032088C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ED97772240DC130032088C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				35ED978B224171460032088C /* MapViewController.swift */,
 				D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */,
 				D0E777BD2243663B009E2ACB /* DetalleViewController.swift */,
+				35398F232243A66500375421 /* CrearProyectoViewController.swift */,
+				359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */,
+				359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */,
 			);
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
@@ -151,8 +160,11 @@
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
 				D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */,
 				35ED97782240DC130032088C /* ViewController.swift in Sources */,
+				359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */,
+				35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
+				359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
