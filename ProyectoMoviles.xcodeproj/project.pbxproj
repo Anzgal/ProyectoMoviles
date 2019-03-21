@@ -14,6 +14,8 @@
 		35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED977E2240DC150032088C /* LaunchScreen.storyboard */; };
 		35ED978C224171460032088C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED978B224171460032088C /* MapViewController.swift */; };
 		D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */; };
+		D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */; };
+		D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BD2243663B009E2ACB /* DetalleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		35ED97812240DC150032088C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35ED978B224171460032088C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png"; sourceTree = "<group>"; };
+		D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
+		D0E777BD2243663B009E2ACB /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				35ED977E2240DC150032088C /* LaunchScreen.storyboard */,
 				35ED97812240DC150032088C /* Info.plist */,
 				35ED978B224171460032088C /* MapViewController.swift */,
+				D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */,
+				D0E777BD2243663B009E2ACB /* DetalleViewController.swift */,
 			);
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
+				D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */,
 				35ED97782240DC130032088C /* ViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
