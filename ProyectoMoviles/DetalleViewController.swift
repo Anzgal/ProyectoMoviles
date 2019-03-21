@@ -10,15 +10,30 @@ import UIKit
 
 class DetalleViewController: UIViewController {
     
-    var razaRecibida = ""
+    var nombreRecibido = ""
+    var pisoRecibido = ""
+    var horarioRecibido = ""
+    var salonRecibido = ""
+    var equipamientoRecibido = ""
+    var emailRecibido = ""
     
-    @IBOutlet weak var razaSeleccionada: UILabel!
+    @IBOutlet weak var nombreSeleccionado: UILabel!
+    @IBOutlet weak var pisoSeleccionado: UILabel!
+    @IBOutlet weak var horarioSeleccionado: UILabel!
+    @IBOutlet weak var salonSeleccionado: UILabel!
+    @IBOutlet weak var equipamientoSeleccionado: UILabel!
+    @IBOutlet weak var emailSeleccionado: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        razaSeleccionada.text = razaRecibida
+        nombreSeleccionado.text = nombreRecibido
+        pisoSeleccionado.text = pisoRecibido
+        horarioSeleccionado.text = horarioRecibido
+        salonSeleccionado.text = salonRecibido
+        equipamientoSeleccionado.text = equipamientoRecibido
+        emailSeleccionado.text = emailRecibido
     }
     
     

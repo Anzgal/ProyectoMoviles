@@ -1,5 +1,5 @@
 //
-//  ListaPerritosTableViewController.swift
+//  TableTableViewController.swift
 //  ProyectoMoviles
 //
 //  Created by Martin Anzures on 2/18/19.
@@ -10,16 +10,16 @@ import UIKit
 
 class TableTableViewController: UITableViewController, UISearchResultsUpdating {
     
-    var perritosFiltrados = [Any]()
+    var datosFiltrados = [Any]()
     let searchController = UISearchController(searchResultsController: nil)
     
     func updateSearchResults(for searchController: UISearchController) {
         if searchController.searchBar.text! == "" {
-            perritosFiltrados = perritosObj!
+            datosFiltrados = datosObj!
         }else {
-            perritosFiltrados = perritosObj!.filter{
-                let objetoPerrito=$0 as! [String:Any]
-                let s:String = objetoPerrito ["raza"] as! String
+            datosFiltrados = datosObj!.filter{
+                let objetoDato=$0 as! [String:Any]
+                let s:String = objetoDato ["Nombre del laboratorio"] as! String
                 
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased()))
             }
@@ -29,13 +29,10 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
     }
     
     
-    let perritosStringURL = "http://martinmolina.com.mx/201911/data/datosPerritos.json"
+    let datosStringURL = "http://martinmolina.com.mx/201911/data/UbicaTec/salonesUbicaTec.json"
     
-    private let perritos = ["Pug", "Labrador", "Pastor Alemán", "Gran Danés", "French Poodle", "San Bernardo", "Kobe", "Dálmata", "Schnauzer", "Puddle"]
-    
-    
-    let perritosJSON = "[{\"raza\" : \"pug\",\"edad\" : \"2\"}, {\"raza\" : \"San Bernardo\",\"edad\" : \"1\"},{\"raza\" : \"Chihuaha\",\"edad\" : \"5\"}]"
-    var perritosObj: [Any]?
+   
+    var datosObj: [Any]?
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
@@ -57,12 +54,12 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let perritosURL = URL(string: perritosStringURL)
-        let data = try? Data(contentsOf: perritosURL!)
+        let datosURL = URL(string: datosStringURL)
+        let data = try? Data(contentsOf: datosURL!)
         
-        perritosObj = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [AnyObject]
+        datosObj = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [AnyObject]
         
-        perritosFiltrados = perritosObj!
+        datosFiltrados = datosObj!
         
         searchController.searchResultsUpdater = self
         
@@ -90,7 +87,7 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return perritosFiltrados.count
+        return datosFiltrados.count
     }
     
     
@@ -98,9 +95,9 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         
         // Configure the cell...
-        let objetoPerrito = perritosFiltrados [indexPath.row] as! [String:Any]
-        let raza:String = objetoPerrito["raza"] as! String
-        cell.textLabel?.text = raza
+        let objetoDato = datosFiltrados [indexPath.row] as! [String:Any]
+        let nombre:String = objetoDato["Nombre del laboratorio"] as! String
+        cell.textLabel?.text = nombre
         return cell
     }
     
@@ -156,10 +153,23 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         let siguiente = segue.destination as! DetalleViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
         
-        let objetoPerrito = perritosFiltrados [indice!] as! [String:Any]
-        let raza:String = objetoPerrito["raza"] as! String
+        let objetoDato = datosFiltrados [indice!] as! [String:Any]
         
-        siguiente.razaRecibida = raza
+        
+        
+        let nombre:String = objetoDato["Nombre del laboratorio"] as! String
+        let piso:String = objetoDato["Piso"] as! String
+        let horario:String = objetoDato["Horarios"] as! String
+        let salon:String = objetoDato["Salon"] as! String
+        let equipamiento:String = objetoDato["Equipamiento"] as! String
+        let email:String = objetoDato["Email Responsable"] as! String
+        
+        siguiente.nombreRecibido = nombre
+        siguiente.pisoRecibido = piso
+        siguiente.horarioRecibido = horario
+        siguiente.salonRecibido = salon
+        siguiente.equipamientoRecibido = equipamiento
+        siguiente.emailRecibido = email
     }
     
     
