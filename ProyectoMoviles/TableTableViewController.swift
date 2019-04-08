@@ -163,6 +163,9 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         let salon:String = objetoDato["Salon"] as! String
         let equipamiento:String = objetoDato["Equipamiento"] as! String
         let email:String = objetoDato["Email Responsable"] as! String
+        let panono:String = objetoDato["Panoramica"] as! String
+        let gear:String = objetoDato["Gear360"] as! String
+        
         
         siguiente.nombreRecibido = nombre
         siguiente.pisoRecibido = piso
@@ -170,6 +173,9 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         siguiente.salonRecibido = salon
         siguiente.equipamientoRecibido = equipamiento
         siguiente.emailRecibido = email
+        siguiente.panonoRecibido = panono
+        siguiente.gearRecibido = gear
+        
     }
     
     

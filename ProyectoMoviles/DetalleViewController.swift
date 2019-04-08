@@ -16,6 +16,8 @@ class DetalleViewController: UIViewController {
     var salonRecibido = ""
     var equipamientoRecibido = ""
     var emailRecibido = ""
+    var panonoRecibido = ""
+    var gearRecibido = ""
     
     @IBOutlet weak var nombreSeleccionado: UILabel!
     @IBOutlet weak var pisoSeleccionado: UILabel!
@@ -37,14 +39,29 @@ class DetalleViewController: UIViewController {
     }
     
     
-    /*
+    
+    
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
+        /*
+        let siguiente = segue.destination as! PanonoViewController
      // Pass the selected object to the new view controller.
+        
+        siguiente.linkRecibido = panonoRecibido
+        */
+        
+        if segue.identifier == "panonoSegue" {
+            let siguiente = segue.destination as! PanonoViewController
+            siguiente.linkRecibido = panonoRecibido
+        } else if segue.identifier == "gearSegue" {
+            let siguiente = segue.destination as! GearViewController
+            siguiente.linkRecibido = gearRecibido
+        }
      }
-     */
+    
     
 }

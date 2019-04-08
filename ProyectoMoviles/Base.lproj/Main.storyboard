@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqL-ya-8kO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqL-ya-8kO">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -451,6 +451,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fotos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJD-0s-Eaf">
+                                <rect key="frame" x="184" y="584" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-o6-dKV">
+                                <rect key="frame" x="42" y="617" width="112" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Panono" image="panono"/>
+                                <connections>
+                                    <segue destination="avS-Qx-ZtU" kind="show" identifier="panonoSegue" id="lHe-xw-sMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-cZ-Yv4">
+                                <rect key="frame" x="310" y="617" width="60" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="gear360"/>
+                                <connections>
+                                    <segue destination="Fb4-4g-y6l" kind="show" identifier="gearSegue" id="iji-K5-X3U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EcU-mV-sZL"/>
@@ -680,23 +703,83 @@
             </objects>
             <point key="canvasLocation" x="2111.594202898551" y="1576.3392857142856"/>
         </scene>
+        <!--Panono View Controller-->
+        <scene sceneID="2e2-qg-Z81">
+            <objects>
+                <viewController id="avS-Qx-ZtU" customClass="PanonoViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6AQ-7Q-bQE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEp-iW-osg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QEp-iW-osg" firstAttribute="trailing" secondItem="3hS-XP-MCY" secondAttribute="trailing" id="1CX-yA-JvN"/>
+                            <constraint firstItem="QEp-iW-osg" firstAttribute="leading" secondItem="3hS-XP-MCY" secondAttribute="leading" id="95Q-gB-SPL"/>
+                            <constraint firstItem="QEp-iW-osg" firstAttribute="bottom" secondItem="3hS-XP-MCY" secondAttribute="bottom" id="rkP-bu-vte"/>
+                            <constraint firstItem="QEp-iW-osg" firstAttribute="top" secondItem="6AQ-7Q-bQE" secondAttribute="top" id="rxB-3J-Vwp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3hS-XP-MCY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="QEp-iW-osg" id="rJf-uU-U2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I75-R5-8oH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2403" y="745"/>
+        </scene>
+        <!--Gear View Controller-->
+        <scene sceneID="nlJ-FO-uhl">
+            <objects>
+                <viewController id="Fb4-4g-y6l" customClass="GearViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7eZ-T6-7W1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-cd-BVZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="leading" secondItem="1fW-9J-03G" secondAttribute="leading" id="4Dr-z6-hEG"/>
+                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="top" secondItem="7eZ-T6-7W1" secondAttribute="top" id="9zr-ak-WPi"/>
+                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="bottom" secondItem="1fW-9J-03G" secondAttribute="bottom" id="NC9-Dz-H27"/>
+                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="trailing" secondItem="1fW-9J-03G" secondAttribute="trailing" id="NVl-dw-BHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1fW-9J-03G"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="Rdt-cd-BVZ" id="2HM-I0-aVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxP-zz-DWP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2404" y="1562"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="150" height="150"/>
+        <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="200" height="200"/>
         <image name="21112-topshot1" width="340" height="605"/>
-        <image name="Captura de pantalla 2019-03-21 a la(s) 6.11.00" width="338" height="687"/>
+        <image name="Captura de pantalla 2019-03-21 a la(s) 6.11.00" width="676" height="1374"/>
         <image name="Lab-PNG-High-Quality-Image" width="512" height="477"/>
         <image name="MongoDB-vs-SQL-Server" width="683" height="318"/>
         <image name="about-png-images" width="1000" height="1000"/>
         <image name="black_transparent" width="1200" height="730"/>
         <image name="cedetec2" width="234" height="450"/>
+        <image name="gear360" width="196" height="424"/>
         <image name="logo-Tec" width="1200" height="600"/>
         <image name="machine_learning1" width="1000" height="1000"/>
         <image name="map-icon_150412" width="260" height="230"/>
+        <image name="panono" width="450" height="472"/>
         <image name="plus-sign" width="224" height="224"/>
         <image name="proyectos1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G4n-HP-GKD"/>
+        <segue reference="seM-La-sR3"/>
     </inferredMetricsTieBreakers>
 </document>
