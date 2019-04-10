@@ -27,6 +27,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Déjame verte perro</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Cuando nos vemos?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>On tas?</string>
 	<key>UILaunchStoryboardName</key>

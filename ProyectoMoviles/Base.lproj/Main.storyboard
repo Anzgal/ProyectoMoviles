@@ -155,7 +155,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Hecho"/>
                                 <connections>
-                                    <segue destination="UFH-1E-NwN" kind="show" id="uhU-dE-6oC"/>
+                                    <action selector="CrearEvento:" destination="ifs-R3-VXs" eventType="touchUpInside" id="eMP-1i-Tiy"/>
                                 </connections>
                             </button>
                         </subviews>
