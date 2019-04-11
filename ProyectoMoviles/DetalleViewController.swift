@@ -17,6 +17,8 @@ class DetalleViewController: UIViewController {
     var equipamientoRecibido = [String] ()
     var fotosRecibido = [String] ()
     var emailRecibido = ""
+    var videos360Recibido = [String] ()
+    var videosRecibido = [String] ()
     //var panonoRecibido = ""
     //var gearRecibido = ""
     
@@ -62,7 +64,14 @@ class DetalleViewController: UIViewController {
         } else if segue.identifier == "equipamientoTableSegue" {
             let siguiente = segue.destination as! EquipamientoTableViewController
             siguiente.tableArray = equipamientoRecibido
+        }else if segue.identifier == "videos360TableSegue" {
+            let siguiente = segue.destination as! Videos360TableViewController
+            siguiente.tableArray = videos360Recibido
+        }else if segue.identifier == "videosTableSegue" {
+            let siguiente = segue.destination as! VideosTableViewController
+            siguiente.tableArray = videosRecibido
         }
+        
      }
     
     

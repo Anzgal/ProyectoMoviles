@@ -366,6 +366,37 @@
             </objects>
             <point key="canvasLocation" x="21.739130434782609" y="115.84821428571428"/>
         </scene>
+        <!--Videos Table View Controller-->
+        <scene sceneID="WeA-Kc-8Tp">
+            <objects>
+                <tableViewController id="Cip-Sj-Phb" customClass="VideosTableViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AMk-pn-rBI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="3vt-ci-He7">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3vt-ci-He7" id="ZsQ-2r-eTf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="KHx-3L-kvW" kind="show" id="WXC-bF-YXT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cip-Sj-Phb" id="988-Xh-HNe"/>
+                            <outlet property="delegate" destination="Cip-Sj-Phb" id="Fjs-RI-EFl"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6F-Az-yp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2460" y="852"/>
+        </scene>
         <!--Detalle View Controller-->
         <scene sceneID="jl0-yi-aeS">
             <objects>
@@ -437,26 +468,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fotos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJD-0s-Eaf">
-                                <rect key="frame" x="184" y="584" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-o6-dKV">
-                                <rect key="frame" x="42" y="617" width="112" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Panono" image="panono"/>
-                                <connections>
-                                    <segue destination="Ogt-O7-QyC" kind="show" identifier="fotosTableSegue" id="h5d-Kn-FmR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-cZ-Yv4">
-                                <rect key="frame" x="310" y="617" width="60" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="gear360"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeL-wh-pC2">
                                 <rect key="frame" x="154" y="392" width="105" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -464,6 +475,33 @@
                                 <state key="normal" title="Equipamiento"/>
                                 <connections>
                                     <segue destination="W77-Ke-O7e" kind="show" identifier="equipamientoTableSegue" id="x7T-mp-OaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RT-Wk-mlz">
+                                <rect key="frame" x="183" y="557" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Fotos"/>
+                                <connections>
+                                    <segue destination="Ogt-O7-QyC" kind="show" id="sQE-Hd-cEl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
+                                <rect key="frame" x="160" y="716" width="93" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Videos 360"/>
+                                <connections>
+                                    <segue destination="zkr-BK-aSW" kind="show" identifier="videos360TableSegue" id="hfa-b5-SAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-oZ-2wj">
+                                <rect key="frame" x="155" y="617" width="103" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Videos (Tap)"/>
+                                <connections>
+                                    <segue destination="Cip-Sj-Phb" kind="show" identifier="videosTableSegue" id="917-1T-ggf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -721,36 +759,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I75-R5-8oH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2403" y="745"/>
-        </scene>
-        <!--Gear View Controller-->
-        <scene sceneID="nlJ-FO-uhl">
-            <objects>
-                <viewController id="Fb4-4g-y6l" customClass="GearViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7eZ-T6-7W1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-cd-BVZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="leading" secondItem="1fW-9J-03G" secondAttribute="leading" id="4Dr-z6-hEG"/>
-                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="top" secondItem="7eZ-T6-7W1" secondAttribute="top" id="9zr-ak-WPi"/>
-                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="bottom" secondItem="1fW-9J-03G" secondAttribute="bottom" id="NC9-Dz-H27"/>
-                            <constraint firstItem="Rdt-cd-BVZ" firstAttribute="trailing" secondItem="1fW-9J-03G" secondAttribute="trailing" id="NVl-dw-BHW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="1fW-9J-03G"/>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="Rdt-cd-BVZ" id="2HM-I0-aVx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kxP-zz-DWP" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2404" y="1562"/>
+            <point key="canvasLocation" x="-1607" y="2398"/>
         </scene>
         <!--Fotos Table View Controller-->
         <scene sceneID="zlD-5k-RtW">
@@ -811,6 +820,95 @@
             </objects>
             <point key="canvasLocation" x="-811" y="1572"/>
         </scene>
+        <!--Videos360 Table View Controller-->
+        <scene sceneID="FxC-pB-J1I">
+            <objects>
+                <tableViewController id="zkr-BK-aSW" customClass="Videos360TableViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dne-5F-3Hc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="HwN-FA-b61">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HwN-FA-b61" id="MRF-Kl-ORK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="D8q-N5-LZI" kind="show" id="gKb-q2-Sma"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zkr-BK-aSW" id="9Qc-vd-Lzg"/>
+                            <outlet property="delegate" destination="zkr-BK-aSW" id="giU-81-I2i"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVl-1H-dhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2096" y="-48"/>
+        </scene>
+        <!--Videos360 View Controller-->
+        <scene sceneID="Lzi-WL-A3A">
+            <objects>
+                <viewController id="D8q-N5-LZI" customClass="Videos360ViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAy-ri-bmz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-FW-9N8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xhC-FW-9N8" firstAttribute="trailing" secondItem="044-5f-KfH" secondAttribute="trailing" id="HEU-F9-9xV"/>
+                            <constraint firstItem="xhC-FW-9N8" firstAttribute="top" secondItem="tAy-ri-bmz" secondAttribute="top" id="QgO-vg-h5k"/>
+                            <constraint firstItem="xhC-FW-9N8" firstAttribute="leading" secondItem="044-5f-KfH" secondAttribute="leading" id="Xs3-Wa-PFg"/>
+                            <constraint firstItem="xhC-FW-9N8" firstAttribute="bottom" secondItem="044-5f-KfH" secondAttribute="bottom" id="YUf-Lu-fXg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="044-5f-KfH"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="xhC-FW-9N8" id="ecO-PD-M5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZT3-cO-V8L" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3855" y="-48"/>
+        </scene>
+        <!--Videos View View Controller-->
+        <scene sceneID="xHF-KN-3aR">
+            <objects>
+                <viewController id="KHx-3L-kvW" customClass="VideosViewViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0JZ-7L-GKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-uh-KJr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lfk-uh-KJr" firstAttribute="top" secondItem="0JZ-7L-GKR" secondAttribute="top" id="Zqu-N3-8Sf"/>
+                            <constraint firstItem="lfk-uh-KJr" firstAttribute="bottom" secondItem="KcW-o3-sAP" secondAttribute="bottom" id="f0J-uZ-Wwh"/>
+                            <constraint firstItem="lfk-uh-KJr" firstAttribute="leading" secondItem="KcW-o3-sAP" secondAttribute="leading" id="k3a-QH-ANR"/>
+                            <constraint firstItem="lfk-uh-KJr" firstAttribute="trailing" secondItem="KcW-o3-sAP" secondAttribute="trailing" id="qBq-xA-eFt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KcW-o3-sAP"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="lfk-uh-KJr" id="1UI-4u-LPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xn-FC-4CF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3855" y="852"/>
+        </scene>
     </scenes>
     <resources>
         <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="200" height="200"/>
@@ -821,11 +919,9 @@
         <image name="about-png-images" width="1000" height="1000"/>
         <image name="black_transparent" width="1200" height="730"/>
         <image name="cedetec2" width="234" height="450"/>
-        <image name="gear360" width="196" height="424"/>
         <image name="logo-Tec" width="1200" height="600"/>
         <image name="machine_learning1" width="1000" height="1000"/>
         <image name="map-icon_150412" width="260" height="230"/>
-        <image name="panono" width="450" height="472"/>
         <image name="plus-sign" width="224" height="224"/>
         <image name="proyectos1" width="512" height="512"/>
     </resources>

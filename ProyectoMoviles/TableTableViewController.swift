@@ -169,7 +169,12 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         print(equipamiento)
         let email:String = objetoDato["Email Responsable"] as! String
         let fotos:[String] = objetoDato["Fotos"] as! [String]
-        print(equipamiento)
+        print(fotos)
+        let videos360:[String] = objetoDato["Videos360"] as! [String]
+        print(videos360)
+        let videos:[String] = objetoDato["Videos"] as! [String]
+        print(videos)
+       
         //let panono:String = objetoDato["Panoramica"] as! String
         //let gear:String = objetoDato["Gear360"] as! String
         
@@ -181,6 +186,8 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         siguiente.equipamientoRecibido = equipamiento
         siguiente.emailRecibido = email
         siguiente.fotosRecibido = fotos
+        siguiente.videos360Recibido = videos360
+        siguiente.videosRecibido = videos
         //siguiente.panonoRecibido = panono
         //siguiente.gearRecibido = gear
         
