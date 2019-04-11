@@ -16,6 +16,10 @@
 		35ED977D2240DC150032088C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ED977C2240DC150032088C /* Assets.xcassets */; };
 		35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED977E2240DC150032088C /* LaunchScreen.storyboard */; };
 		35ED978C224171460032088C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED978B224171460032088C /* MapViewController.swift */; };
+		35FD7609225E61510033F710 /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD7608225E61510033F710 /* ProyectosTableViewController.swift */; };
+		35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */; };
+		35FE8E30225FB48B001E32E5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FE8E2F225FB48B001E32E5 /* art.scnassets */; };
+		35FE8E32225FB58E001E32E5 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
 		D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED6225F7B4700643534 /* FotosTableViewController.swift */; };
@@ -41,6 +45,10 @@
 		35ED977F2240DC150032088C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35ED97812240DC150032088C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35ED978B224171460032088C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		35FD7608225E61510033F710 /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
+		35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProyectoViewController.swift; sourceTree = "<group>"; };
+		35FE8E2F225FB48B001E32E5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
 		D0080CA9225BBCAD00CA9148 /* GearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
 		D0803ED6225F7B4700643534 /* FotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosTableViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 				D0803ED6225F7B4700643534 /* FotosTableViewController.swift */,
 				D0080CA9225BBCAD00CA9148 /* GearViewController.swift */,
 				35ED977C2240DC150032088C /* Assets.xcassets */,
+				35FE8E2F225FB48B001E32E5 /* art.scnassets */,
 				D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */,
 				35ED977E2240DC150032088C /* LaunchScreen.storyboard */,
 				35ED97812240DC150032088C /* Info.plist */,
@@ -105,6 +114,9 @@
 				35398F232243A66500375421 /* CrearProyectoViewController.swift */,
 				359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */,
 				359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */,
+				35FD7608225E61510033F710 /* ProyectosTableViewController.swift */,
+				35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */,
+				35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */,
 			);
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
@@ -168,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */,
+				35FE8E30225FB48B001E32E5 /* art.scnassets in Resources */,
 				35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */,
 				35ED977D2240DC150032088C /* Assets.xcassets in Resources */,
 				35ED977B2240DC130032088C /* Main.storyboard in Resources */,
@@ -184,6 +197,8 @@
 				D0803EDF225FBEB200643534 /* VideosTableViewController.swift in Sources */,
 				D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */,
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
+				35FD7609225E61510033F710 /* ProyectosTableViewController.swift in Sources */,
+				35FE8E32225FB58E001E32E5 /* PokemonViewController.swift in Sources */,
 				D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */,
 				D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */,
 				D0803EDB225FB59A00643534 /* Videos360TableViewController.swift in Sources */,
@@ -193,6 +208,7 @@
 				D0803EDD225FB82000643534 /* Videos360ViewController.swift in Sources */,
 				35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
+				35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
 				D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */,
 				D0803EE1225FC0EB00643534 /* VideosViewController.swift in Sources */,
@@ -343,13 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NHDNH4JU2S;
+				DEVELOPMENT_TEAM = 657XZX3BZL;
 				INFOPLIST_FILE = ProyectoMoviles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortugaselmero.ProyectoMoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortuga.ProyectoMoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,13 +377,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NHDNH4JU2S;
+				DEVELOPMENT_TEAM = 657XZX3BZL;
 				INFOPLIST_FILE = ProyectoMoviles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortugaselmero.ProyectoMoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortuga.ProyectoMoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
