@@ -19,6 +19,8 @@ class DetalleViewController: UIViewController {
     var panonoRecibido = ""
     var gearRecibido = ""
     
+
+   
     @IBOutlet weak var nombreSeleccionado: UILabel!
     @IBOutlet weak var pisoSeleccionado: UILabel!
     @IBOutlet weak var horarioSeleccionado: UILabel!
@@ -28,6 +30,7 @@ class DetalleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         // Do any additional setup after loading the view.
         nombreSeleccionado.text = nombreRecibido

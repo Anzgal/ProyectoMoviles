@@ -16,6 +16,8 @@
 		35ED977D2240DC150032088C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ED977C2240DC150032088C /* Assets.xcassets */; };
 		35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED977E2240DC150032088C /* LaunchScreen.storyboard */; };
 		35ED978C224171460032088C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED978B224171460032088C /* MapViewController.swift */; };
+		35FD7609225E61510033F710 /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD7608225E61510033F710 /* ProyectosTableViewController.swift */; };
+		35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
 		D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */; };
@@ -35,6 +37,8 @@
 		35ED977F2240DC150032088C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35ED97812240DC150032088C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35ED978B224171460032088C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		35FD7608225E61510033F710 /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
+		35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProyectoViewController.swift; sourceTree = "<group>"; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
 		D0080CA9225BBCAD00CA9148 /* GearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
 		D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png"; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				35398F232243A66500375421 /* CrearProyectoViewController.swift */,
 				359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */,
 				359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */,
+				35FD7608225E61510033F710 /* ProyectosTableViewController.swift */,
+				35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */,
 			);
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
@@ -165,12 +171,14 @@
 			files = (
 				D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */,
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
+				35FD7609225E61510033F710 /* ProyectosTableViewController.swift in Sources */,
 				D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */,
 				D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */,
 				35ED97782240DC130032088C /* ViewController.swift in Sources */,
 				359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */,
 				35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
+				35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
 				359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */,
 			);
