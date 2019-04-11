@@ -888,6 +888,34 @@
             </objects>
             <point key="canvasLocation" x="2033.3333333333335" y="-646.20535714285711"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="tQL-Fp-Yhv">
+            <objects>
+                <tableViewController id="uJi-t7-vgO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EKY-vh-68j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9Nm-av-58m">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Nm-av-58m" id="vfa-aM-hTI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uJi-t7-vgO" id="vsp-qj-xlg"/>
+                            <outlet property="delegate" destination="uJi-t7-vgO" id="xMc-NQ-6eh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhA-4a-qSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="637"/>
+        </scene>
         <!--Pokemon View Controller-->
         <scene sceneID="Ayj-UK-6cU">
             <objects>
@@ -903,7 +931,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tr6-Wl-48m" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="290"/>
+            <point key="canvasLocation" x="2842" y="966"/>
         </scene>
     </scenes>
     <resources>
