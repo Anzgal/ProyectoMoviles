@@ -46,11 +46,13 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
                 
                 print("error")
                 //handle errors here
-                
             }
         }
         return [AnyObject]()
+        
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +72,7 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         self.definesPresentationContext = true
         
         tableView.tableHeaderView = searchController.searchBar
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -154,6 +157,7 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         let indice = self.tableView.indexPathForSelectedRow?.row
         
         let objetoDato = datosFiltrados [indice!] as! [String:Any]
+
         
         
         
@@ -161,10 +165,13 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         let piso:String = objetoDato["Piso"] as! String
         let horario:String = objetoDato["Horarios"] as! String
         let salon:String = objetoDato["Salon"] as! String
-        let equipamiento:String = objetoDato["Equipamiento"] as! String
+        let equipamiento:[String] = objetoDato["Equipamiento"] as! [String]
+        print(equipamiento)
         let email:String = objetoDato["Email Responsable"] as! String
-        let panono:String = objetoDato["Panoramica"] as! String
-        let gear:String = objetoDato["Gear360"] as! String
+        let fotos:[String] = objetoDato["Fotos"] as! [String]
+        print(equipamiento)
+        //let panono:String = objetoDato["Panoramica"] as! String
+        //let gear:String = objetoDato["Gear360"] as! String
         
         
         siguiente.nombreRecibido = nombre
@@ -173,8 +180,9 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         siguiente.salonRecibido = salon
         siguiente.equipamientoRecibido = equipamiento
         siguiente.emailRecibido = email
-        siguiente.panonoRecibido = panono
-        siguiente.gearRecibido = gear
+        siguiente.fotosRecibido = fotos
+        //siguiente.panonoRecibido = panono
+        //siguiente.gearRecibido = gear
         
     }
     

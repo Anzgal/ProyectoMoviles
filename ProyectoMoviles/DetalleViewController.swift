@@ -14,27 +14,29 @@ class DetalleViewController: UIViewController {
     var pisoRecibido = ""
     var horarioRecibido = ""
     var salonRecibido = ""
-    var equipamientoRecibido = ""
+    var equipamientoRecibido = [String] ()
+    var fotosRecibido = [String] ()
     var emailRecibido = ""
-    var panonoRecibido = ""
-    var gearRecibido = ""
+    //var panonoRecibido = ""
+    //var gearRecibido = ""
     
     @IBOutlet weak var nombreSeleccionado: UILabel!
     @IBOutlet weak var pisoSeleccionado: UILabel!
     @IBOutlet weak var horarioSeleccionado: UILabel!
     @IBOutlet weak var salonSeleccionado: UILabel!
-    @IBOutlet weak var equipamientoSeleccionado: UILabel!
+    //@IBOutlet weak var equipamientoSeleccionado: UILabel!
     @IBOutlet weak var emailSeleccionado: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(equipamientoRecibido)
         // Do any additional setup after loading the view.
         nombreSeleccionado.text = nombreRecibido
         pisoSeleccionado.text = pisoRecibido
         horarioSeleccionado.text = horarioRecibido
         salonSeleccionado.text = salonRecibido
-        equipamientoSeleccionado.text = equipamientoRecibido
+        //equipamientoSeleccionado.text = equipamientoRecibido
         emailSeleccionado.text = emailRecibido
     }
     
@@ -48,18 +50,18 @@ class DetalleViewController: UIViewController {
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
         /*
-        let siguiente = segue.destination as! PanonoViewController
+        let siguiente = segue.destination as! FotosTableViewController
      // Pass the selected object to the new view controller.
         
-        siguiente.linkRecibido = panonoRecibido
+        siguiente.tableArray = equipamientoRecibido
         */
         
-        if segue.identifier == "panonoSegue" {
-            let siguiente = segue.destination as! PanonoViewController
-            siguiente.linkRecibido = panonoRecibido
-        } else if segue.identifier == "gearSegue" {
-            let siguiente = segue.destination as! GearViewController
-            siguiente.linkRecibido = gearRecibido
+        if segue.identifier == "fotosTableSegue" {
+            let siguiente = segue.destination as! FotosTableViewController
+            siguiente.tableArray = fotosRecibido
+        } else if segue.identifier == "equipamientoTableSegue" {
+            let siguiente = segue.destination as! EquipamientoTableViewController
+            siguiente.tableArray = equipamientoRecibido
         }
      }
     

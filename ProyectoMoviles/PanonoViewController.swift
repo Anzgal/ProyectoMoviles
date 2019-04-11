@@ -13,12 +13,13 @@ import ARKit
 class PanonoViewController: UIViewController, ARSCNViewDelegate {
     
     var linkRecibido = ""
+    var prueba = ""
     
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("El linkRecibido es: " + linkRecibido)
         // Set the view's delegate
         sceneView.delegate = self
         
@@ -50,8 +51,11 @@ class PanonoViewController: UIViewController, ARSCNViewDelegate {
          scene.rootNode.addChildNode(node)
          */
         
-        let link = linkRecibido
-        let imageUrl = URL(string: link)!
+        
+        
+
+        
+        let imageUrl = URL(string: linkRecibido)!
         
         let scene =    SCNScene()
         let esfera    =    SCNSphere(radius:    20.0)

@@ -18,6 +18,8 @@
 		35ED978C224171460032088C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED978B224171460032088C /* MapViewController.swift */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
+		D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED6225F7B4700643534 /* FotosTableViewController.swift */; };
+		D0803ED9225F89A500643534 /* EquipamientoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */; };
 		D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */; };
 		D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */; };
 		D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BD2243663B009E2ACB /* DetalleViewController.swift */; };
@@ -37,6 +39,8 @@
 		35ED978B224171460032088C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
 		D0080CA9225BBCAD00CA9148 /* GearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
+		D0803ED6225F7B4700643534 /* FotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosTableViewController.swift; sourceTree = "<group>"; };
+		D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamientoTableViewController.swift; sourceTree = "<group>"; };
 		D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png"; sourceTree = "<group>"; };
 		D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 		D0E777BD2243663B009E2ACB /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				35ED97752240DC130032088C /* AppDelegate.swift */,
 				35ED97772240DC130032088C /* ViewController.swift */,
 				35ED97792240DC130032088C /* Main.storyboard */,
+				D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */,
+				D0803ED6225F7B4700643534 /* FotosTableViewController.swift */,
 				D0080CA9225BBCAD00CA9148 /* GearViewController.swift */,
 				35ED977C2240DC150032088C /* Assets.xcassets */,
 				D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */,
@@ -167,11 +173,13 @@
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
 				D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */,
 				D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */,
+				D0803ED9225F89A500643534 /* EquipamientoTableViewController.swift in Sources */,
 				35ED97782240DC130032088C /* ViewController.swift in Sources */,
 				359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */,
 				35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
+				D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */,
 				359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
