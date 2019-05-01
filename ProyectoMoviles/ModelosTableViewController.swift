@@ -82,10 +82,10 @@ extension ModelosTableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        let siguiente = segue.destination as! VideosViewViewController
+        let siguiente = segue.destination as! PokemonViewController
         //let prueba = textoFila
         //siguiente.linkRecibido = self.tableArray[IndexPath.row]
-        siguiente.linkRecibido = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
+        //siguiente.linkRecibido = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
         
         //print("El textoFila es: " + textoFila)
         

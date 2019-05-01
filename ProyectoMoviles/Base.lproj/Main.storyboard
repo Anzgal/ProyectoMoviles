@@ -63,7 +63,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bET-lF-1vv" kind="show" id="LDX-5x-v5W"/>
+                                    <segue destination="40f-5i-5Ec" kind="show" id="5OC-X3-8BV"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="black_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-fO-Fum">
@@ -277,7 +277,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Fotos"/>
                                 <connections>
-                                    <segue destination="Ogt-O7-QyC" kind="show" id="sQE-Hd-cEl"/>
+                                    <segue destination="Ogt-O7-QyC" kind="show" identifier="fotosTableSegue" id="sQE-Hd-cEl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
@@ -303,6 +303,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Modelos 3d"/>
+                                <connections>
+                                    <segue destination="uJi-t7-vgO" kind="show" identifier="modelosTablaSegue" id="WUR-3N-uhY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -738,14 +741,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-DV-HRH">
+                                <rect key="frame" x="179" y="396" width="206" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="576703774.19081199">
+                                    <!--2019-04-11 19:29:34 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vhz-Z8-jKw">
+                                <rect key="frame" x="188" y="506" width="206" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="576703774.19081199">
+                                    <!--2019-04-11 19:29:34 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wnL-dL-c0V"/>
                     </view>
+                    <connections>
+                        <outlet property="fin" destination="Vhz-Z8-jKw" id="GI6-cJ-BWU"/>
+                        <outlet property="inicio" destination="Gd8-DV-HRH" id="CEc-Ab-nYD"/>
+                        <outlet property="nombreProyecto" destination="Uic-VP-Gt9" id="gh8-Kc-ynT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcm-Ur-kko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2843" y="116"/>
+            <point key="canvasLocation" x="2842.0289855072465" y="115.84821428571428"/>
         </scene>
         <!--Proyectos Table View Controller-->
         <scene sceneID="W6a-dz-Igu">
@@ -888,10 +910,10 @@
             </objects>
             <point key="canvasLocation" x="2033.3333333333335" y="-646.20535714285711"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Modelos Table View Controller-->
         <scene sceneID="tQL-Fp-Yhv">
             <objects>
-                <tableViewController id="uJi-t7-vgO" sceneMemberID="viewController">
+                <tableViewController id="uJi-t7-vgO" customClass="ModelosTableViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EKY-vh-68j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -904,6 +926,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tGa-uG-whN" kind="show" id="riS-zt-yyR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -947,7 +972,6 @@
         <image name="proyectos1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r5k-nJ-KnH"/>
         <segue reference="seM-La-sR3"/>
     </inferredMetricsTieBreakers>
 </document>

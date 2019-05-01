@@ -15,10 +15,11 @@ class DetalleViewController: UIViewController {
     var horarioRecibido = ""
     var salonRecibido = ""
     var equipamientoRecibido = [String] ()
-    var fotosRecibido = [String] ()
+    var fotosRecibido = ""
     var emailRecibido = ""
-    var videos360Recibido = [String] ()
-    var videosRecibido = [String] ()
+    var videos360Recibido = ""
+    var videosRecibido = ""
+    var modelosRecibido = [String] ()
     //var panonoRecibido = ""
     //var gearRecibido = ""
     
@@ -73,6 +74,9 @@ class DetalleViewController: UIViewController {
         }else if segue.identifier == "videosTableSegue" {
             let siguiente = segue.destination as! VideosTableViewController
             siguiente.tableArray = videosRecibido
+        }else if segue.identifier == "modelosTablaSegue" {
+            let siguiente = segue.destination as! ModelosTableViewController
+            siguiente.tableArray = modelosRecibido
         }
         
      }

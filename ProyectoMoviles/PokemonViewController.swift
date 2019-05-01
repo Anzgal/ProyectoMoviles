@@ -1,120 +1,101 @@
-
-
-
+//
+//  ViewController.swift
+//  Perlas
+//
+//  Created by molina on 3/28/19.
+//  Copyright © 2019 Tec de Monterrey. All rights reserved.
+//
 
 import UIKit
-import QuartzCore
 import SceneKit
+import ARKit
 
-class PokemonViewController: UIViewController {
+class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
- 
-    @IBOutlet var scnView: SCNView!
+    @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // create a new scene
-    let scene = SCNScene(named: "art.scnassets/Pokemon.scn")!
-    
-    // create and add a camera to the scene
-    let cameraNode = SCNNode()
-    cameraNode.camera = SCNCamera()
-    scene.rootNode.addChildNode(cameraNode)
-    
-    // place the camera
-    cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
-    
-    // create and add a light to the scene
-    let lightNode = SCNNode()
-    lightNode.light = SCNLight()
-    lightNode.light!.type = .omni
-    lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-    scene.rootNode.addChildNode(lightNode)
-    
-    // create and add an ambient light to the scene
-    let ambientLightNode = SCNNode()
-    ambientLightNode.light = SCNLight()
-    ambientLightNode.light!.type = .ambient
-    ambientLightNode.light!.color = UIColor.darkGray
-    scene.rootNode.addChildNode(ambientLightNode)
-    
-    // retrieve the ship node
-    // let pokemon = scene.rootNode.childNode(withName: "Pokemon", recursively: true)!
-    
-    // animate the 3d object
-    //   pokemon.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-    
-    // retrieve the SCNView
-    let scnView = self.view as! SCNView
-    
-    // set the scene to the view
-    scnView.scene = scene
-    
-    // allows the user to manipulate the camera
-    scnView.allowsCameraControl = true
-    
-    // show statistics such as fps and timing information
-    scnView.showsStatistics = true
-    
-    // configure the view
-    scnView.backgroundColor = UIColor.black
-    
-    // add a tap gesture recognizer
-    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-    scnView.addGestureRecognizer(tapGesture)
+        super.viewDidLoad()
+        
+        // Set the view's delegate
+        sceneView.delegate = self
+        
+        // Show statistics such as fps and timing information
+        sceneView.showsStatistics = true
+        
+        // Create a new scene
+        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        
+        // Set the scene to the view
+        sceneView.scene = scene
     }
     
-    @objc
-    func handleTap(_ gestureRecognize: UIGestureRecognizer) {
-    // retrieve the SCNView
-    let scnView = self.view as! SCNView
-    
-    // check what nodes are tapped
-    let p = gestureRecognize.location(in: scnView)
-    let hitResults = scnView.hitTest(p, options: [:])
-    // check that we clicked on at least one object
-    if hitResults.count > 0 {
-    // retrieved the first clicked object
-    let result = hitResults[0]
-    
-    // get its material
-    let material = result.node.geometry!.firstMaterial!
-    
-    // highlight it
-    SCNTransaction.begin()
-    SCNTransaction.animationDuration = 0.5
-    
-    // on completion - unhighlight
-    SCNTransaction.completionBlock = {
-    SCNTransaction.begin()
-    SCNTransaction.animationDuration = 0.5
-    
-    material.emission.contents = UIColor.black
-    
-    SCNTransaction.commit()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Create a session configuration
+        //let configuration = ARWorldTrackingConfiguration()
+        
+        //Cambio 1 cambiar a trackin a través de imagen
+        //let configuration = ARWorldTrackingConfiguration()
+        let configuration = ARImageTrackingConfiguration()
+        
+        //Cambio 2, asignar la imagen marcadora
+        guard let imagenesMarcador = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
+            fatalError("No se encontró la imagen marcadora")
+        }
+        configuration.trackingImages = imagenesMarcador
+        // Run the view's session
+        sceneView.session.run(configuration)
+    }
+    //cambio 3, definir el método que será invocado al identificar una imágen marcador
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if let anchor = anchor as? ARImageAnchor{
+            let imagenReferencia = anchor.referenceImage
+            agregarModelo(to: node, refImage: imagenReferencia)
+        }
     }
     
-    material.emission.contents = UIColor.red
-    
-    SCNTransaction.commit()
+    private func agregarModelo(to node:SCNNode, refImage:ARReferenceImage ){
+        DispatchQueue.global().async {
+            let escenaModelo =  SCNScene(named: "art.scnassets/perlas.dae")!
+            //encontrar el nodo principal
+            let nodoPrincipal = escenaModelo.rootNode.childNode(withName: "Brazalete", recursively: true)!
+            node.addChildNode(nodoPrincipal)
+        }
+        
+        
     }
-    }
-    
-    override var shouldAutorotate: Bool {
-    return true
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-    return true
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-    if UIDevice.current.userInterfaceIdiom == .phone {
-    return .allButUpsideDown
-    } else {
-    return .all
-    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        sceneView.session.pause()
     }
     
+    // MARK: - ARSCNViewDelegate
+    
+    /*
+     // Override to create and configure nodes for anchors added to the view's session.
+     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+     let node = SCNNode()
+     
+     return node
+     }
+     */
+    
+    func session(_ session: ARSession, didFailWithError error: Error) {
+        // Present an error message to the user
+        
+    }
+    
+    func sessionWasInterrupted(_ session: ARSession) {
+        // Inform the user that the session has been interrupted, for example, by presenting an overlay
+        
+    }
+    
+    func sessionInterruptionEnded(_ session: ARSession) {
+        // Reset tracking and/or remove existing anchors if consistent tracking is required
+        
+    }
 }

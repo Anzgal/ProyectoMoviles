@@ -11,10 +11,13 @@ import EventKit
 
 class CrearProyectoViewController: UIViewController {
     
+    @IBOutlet weak var nombreProyecto: UITextField!
     
-   
+    @IBOutlet weak var inicio: UIDatePicker!
+    
 
-
+    @IBOutlet weak var fin: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,9 +38,9 @@ class CrearProyectoViewController: UIViewController {
                 print("error \(error)")
                 
                 let event:EKEvent = EKEvent(eventStore: eventStore)
-                event.title = "Pruebita del calendarito"
-                event.startDate = Date()
-                event.endDate = Date()
+                event.title = self.nombreProyecto.text
+                event.startDate = self.inicio.date
+                event.endDate = self.fin.date
                 event.notes = "Notita"
                 event.calendar = eventStore.defaultCalendarForNewEvents
                 
