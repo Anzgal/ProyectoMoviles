@@ -24,7 +24,7 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/Pokemon.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -58,7 +58,7 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
     private func agregarModelo(to node:SCNNode, refImage:ARReferenceImage ){
         DispatchQueue.global().async {
-            let escenaModelo =  SCNScene(named: "art.scnassets/perlas.dae")!
+            let escenaModelo =  SCNScene(named: "art.scnassets/bolt.dae")!
             //encontrar el nodo principal
             let nodoPrincipal = escenaModelo.rootNode.childNode(withName: "Brazalete", recursively: true)!
             node.addChildNode(nodoPrincipal)

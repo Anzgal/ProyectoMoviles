@@ -944,7 +944,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tGa-uG-whN" kind="show" id="riS-zt-yyR"/>
+                                    <segue destination="15c-q8-hYa" kind="show" id="lEk-5U-7qT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -961,6 +961,7 @@
         <!--Pokemon View Controller-->
         <scene sceneID="Ayj-UK-6cU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr6-Wl-48m" sceneMemberID="firstResponder"/>
                 <viewController id="tGa-uG-whN" customClass="PokemonViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
                     <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h8b-jm-cSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -971,9 +972,8 @@
                         <outlet property="scnView" destination="h8b-jm-cSX" id="rkf-Kp-lCJ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr6-Wl-48m" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="858"/>
+            <point key="canvasLocation" x="2797" y="873"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rhK-FZ-l9n">
@@ -1051,6 +1051,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OV5-Jd-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-703" y="-808"/>
+        </scene>
+        <!--Pokemon View Controller-->
+        <scene sceneID="BMO-kp-O2S">
+            <objects>
+                <viewController id="15c-q8-hYa" customClass="PokemonViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uYh-2R-A8G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4B-bg-dLH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P4B-bg-dLH" firstAttribute="trailing" secondItem="YpM-Mh-lcw" secondAttribute="trailing" id="6fl-4h-XhC"/>
+                            <constraint firstItem="P4B-bg-dLH" firstAttribute="bottom" secondItem="YpM-Mh-lcw" secondAttribute="bottom" id="U3Z-cu-l4U"/>
+                            <constraint firstItem="P4B-bg-dLH" firstAttribute="leading" secondItem="YpM-Mh-lcw" secondAttribute="leading" id="omJ-30-tLD"/>
+                            <constraint firstItem="P4B-bg-dLH" firstAttribute="top" secondItem="uYh-2R-A8G" secondAttribute="top" id="r9Y-dI-8a8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YpM-Mh-lcw"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="P4B-bg-dLH" id="U6k-Qy-wKC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jna-jr-zIA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="852"/>
         </scene>
     </scenes>
     <resources>
