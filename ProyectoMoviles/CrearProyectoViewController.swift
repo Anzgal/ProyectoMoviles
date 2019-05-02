@@ -10,7 +10,7 @@ import UIKit
 import EventKit
 import UserNotifications
 
-class CrearProyectoViewController: UIViewController {
+class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nombreProyecto: UITextField!
     
@@ -26,7 +26,22 @@ class CrearProyectoViewController: UIViewController {
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
         
+        self.actividades.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ actividades: UITextField) -> Bool{
+        
+        actividades.resignFirstResponder()
+        return(true)
     }
     
     
