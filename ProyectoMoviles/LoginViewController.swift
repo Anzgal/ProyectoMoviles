@@ -20,6 +20,10 @@ class LoginViewController: UIViewController {
             
             if error != nil{
                 print(error!)
+                 let alert = UIAlertController(title: "Error", message: error.debugDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "continue", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
             }
             else{
                 print("Registro de usuario exitoso")

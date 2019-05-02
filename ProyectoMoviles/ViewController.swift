@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,23 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func logout(_ sender: UIButton) {
+        do{
+            //Método para cirre de sesión
+            try Auth.auth().signOut()
+            //Regresa a la vista raíz del navegador
+            navigationController?.popToRootViewController(animated: true)
+            print("Logout exitoso")
+            
+        }catch{
+            print("Error en logout")
+            let alert = UIAlertController(title: "Error", message: "Error en Logout", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "continue", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         // Show the Navigation Bar
