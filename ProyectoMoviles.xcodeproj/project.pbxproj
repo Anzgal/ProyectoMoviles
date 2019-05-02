@@ -23,6 +23,7 @@
 		A04AB52C06264A30EA28A7FD /* Pods_ProyectoMoviles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
+		D04F091B227B1C5F002713FA /* InfoperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F091A227B1C5F002713FA /* InfoperViewController.swift */; };
 		D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED6225F7B4700643534 /* FotosTableViewController.swift */; };
 		D0803ED9225F89A500643534 /* EquipamientoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */; };
 		D0803EDB225FB59A00643534 /* Videos360TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EDA225FB59900643534 /* Videos360TableViewController.swift */; };
@@ -58,6 +59,7 @@
 		7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoMoviles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
 		D0080CA9225BBCAD00CA9148 /* GearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
+		D04F091A227B1C5F002713FA /* InfoperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoperViewController.swift; sourceTree = "<group>"; };
 		D0803ED6225F7B4700643534 /* FotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosTableViewController.swift; sourceTree = "<group>"; };
 		D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipamientoTableViewController.swift; sourceTree = "<group>"; };
 		D0803EDA225FB59900643534 /* Videos360TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos360TableViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				35ED97752240DC130032088C /* AppDelegate.swift */,
 				35ED97772240DC130032088C /* ViewController.swift */,
 				35ED97792240DC130032088C /* Main.storyboard */,
+				D04F091A227B1C5F002713FA /* InfoperViewController.swift */,
 				D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */,
 				D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */,
 				D0803EDE225FBEB200643534 /* VideosTableViewController.swift */,
@@ -151,7 +154,6 @@
 				4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */,
 				28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -238,6 +240,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -247,6 +250,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -300,6 +304,7 @@
 				35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */,
 				35ED978C224171460032088C /* MapViewController.swift in Sources */,
 				35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */,
+				D04F091B227B1C5F002713FA /* InfoperViewController.swift in Sources */,
 				35ED97762240DC130032088C /* AppDelegate.swift in Sources */,
 				D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */,
 				D0803EE1225FC0EB00643534 /* VideosViewController.swift in Sources */,

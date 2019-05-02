@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class FotosTableViewController: UITableViewController{
     
+   
     var tableArray = ""
     var nuevoArray:[Any]?
     
@@ -41,7 +43,6 @@ class FotosTableViewController: UITableViewController{
         self.tableView.delegate = self
         
         nuevoArray = JSONParseArray(tableArray)
-        
         //print(self.tableArray)
         
         
@@ -81,6 +82,11 @@ extension FotosTableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         SwiftSpinner.show("Cargando imagen")
+        
+    }
+    
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -115,3 +121,4 @@ extension FotosTableViewController {
     }
     
 }
+

@@ -9,16 +9,23 @@
 import UIKit
 import SceneKit
 import ARKit
+import SwiftSpinner
 
 class PanonoViewController: UIViewController, ARSCNViewDelegate {
     
     var linkRecibido = ""
     var prueba = ""
+    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     
     @IBOutlet var sceneView: ARSCNView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        SwiftSpinner.hide()
+        
+        
         print("El linkRecibido es: " + linkRecibido)
         // Set the view's delegate
         sceneView.delegate = self
@@ -81,6 +88,7 @@ class PanonoViewController: UIViewController, ARSCNViewDelegate {
         
         
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
