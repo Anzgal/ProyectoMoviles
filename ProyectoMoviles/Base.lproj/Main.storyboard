@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqL-ya-8kO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wbk-87-oDK">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,23 +11,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="soe-Iw-0mK">
+        <scene sceneID="Nas-Nd-fbb">
             <objects>
-                <navigationController navigationBarHidden="YES" id="aqL-ya-8kO" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FVH-uY-bCn">
+                <navigationController id="wbk-87-oDK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8O4-gI-j21">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8iF-iu-JLs">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
-                        <segue destination="UFH-1E-NwN" kind="relationship" relationship="rootViewController" id="seM-La-sR3"/>
+                        <segue destination="gGx-UU-1Ue" kind="relationship" relationship="rootViewController" id="rqk-L0-wLZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PWA-1O-AaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gz9-HM-09z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-864" y="116"/>
+            <point key="canvasLocation" x="-1214" y="-48"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lYp-Tf-pIi">
@@ -1028,11 +1025,12 @@
                     <connections>
                         <outlet property="password" destination="qQ0-4h-50J" id="8z3-cq-Bzl"/>
                         <outlet property="user" destination="EKC-BM-pkX" id="n0y-Bd-CXk"/>
+                        <segue destination="UFH-1E-NwN" kind="show" identifier="gotoMain" id="FGP-kw-yd7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OV5-Jd-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3197.1014492753625" y="1964.7321428571427"/>
+            <point key="canvasLocation" x="-703" y="-808"/>
         </scene>
     </scenes>
     <resources>
@@ -1048,6 +1046,6 @@
         <image name="proyectos1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="seM-La-sR3"/>
+        <segue reference="FGP-kw-yd7"/>
     </inferredMetricsTieBreakers>
 </document>

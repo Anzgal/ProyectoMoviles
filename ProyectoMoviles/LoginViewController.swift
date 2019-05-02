@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
             }
             else{
                 print("Registro de usuario exitoso")
-                self.performSegue(withIdentifier: "goToDetalles", sender: self)
+                self.performSegue(withIdentifier: "gotoMain", sender: self)
             }
             
         }
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
                 self.present(alert, animated: true)
             }else{
                 print("Login exitoso")
-                self.performSegue(withIdentifier: "goToDetalles", sender: self)
+                self.performSegue(withIdentifier: "gotoMain", sender: self)
                 
             }
             
@@ -51,8 +51,19 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // Show the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     
-
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        // Hide the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+   
     /*
     // MARK: - Navigation
 
