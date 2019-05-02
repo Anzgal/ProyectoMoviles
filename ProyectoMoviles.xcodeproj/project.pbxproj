@@ -151,7 +151,6 @@
 				4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */,
 				28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -452,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NHDNH4JU2S;
+				DEVELOPMENT_TEAM = 657XZX3BZL;
 				INFOPLIST_FILE = ProyectoMoviles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,7 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NHDNH4JU2S;
+				DEVELOPMENT_TEAM = 657XZX3BZL;
 				INFOPLIST_FILE = ProyectoMoviles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

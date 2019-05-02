@@ -8,6 +8,7 @@
 
 import UIKit
 import EventKit
+import UserNotifications
 
 class CrearProyectoViewController: UIViewController {
     
@@ -15,19 +16,35 @@ class CrearProyectoViewController: UIViewController {
     
     @IBOutlet weak var inicio: UIDatePicker!
     
-
+    @IBOutlet weak var actividades: UITextField!
+    
     @IBOutlet weak var fin: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func CrearEvento(_ sender: UIButton) {
+    
+        
+        let content = UNMutableNotificationContent()
+        content.title = self.nombreProyecto.text!
+        content.subtitle = self.actividades.text!
+        content.body = self.actividades.text!
+        content.badge = 1
+        
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "PROYECTO CREADO", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
         let eventStore:EKEventStore = EKEventStore()
         eventStore.requestAccess(to: .event) { (granted ,error) in
@@ -41,7 +58,7 @@ class CrearProyectoViewController: UIViewController {
                 event.title = self.nombreProyecto.text
                 event.startDate = self.inicio.date
                 event.endDate = self.fin.date
-                event.notes = "Notita"
+                event.notes = self.actividades.text
                 event.calendar = eventStore.defaultCalendarForNewEvents
                 
                 do{
