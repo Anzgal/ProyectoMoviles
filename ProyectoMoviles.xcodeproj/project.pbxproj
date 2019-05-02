@@ -20,6 +20,7 @@
 		35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */; };
 		35FE8E30225FB48B001E32E5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FE8E2F225FB48B001E32E5 /* art.scnassets */; };
 		35FE8E32225FB58E001E32E5 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */; };
+		A04AB52C06264A30EA28A7FD /* Pods_ProyectoMoviles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
 		D0803ED7225F7B4700643534 /* FotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803ED6225F7B4700643534 /* FotosTableViewController.swift */; };
@@ -29,12 +30,15 @@
 		D0803EDF225FBEB200643534 /* VideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EDE225FBEB200643534 /* VideosTableViewController.swift */; };
 		D0803EE1225FC0EB00643534 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EE0225FC0EB00643534 /* VideosViewController.swift */; };
 		D0803EE3225FCB7300643534 /* ModelosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */; };
+		D0AF60C4227A702A00E0D0D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */; };
+		D0AF60C6227A728D00E0D0D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */; };
 		D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */; };
 		D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */; };
 		D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BD2243663B009E2ACB /* DetalleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoMoviles.release.xcconfig"; path = "Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles.release.xcconfig"; sourceTree = "<group>"; };
 		35398F232243A66500375421 /* CrearProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProyectoViewController.swift; sourceTree = "<group>"; };
 		359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoCreadoViewController.swift; sourceTree = "<group>"; };
 		359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoProyectoViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProyectoViewController.swift; sourceTree = "<group>"; };
 		35FE8E2F225FB48B001E32E5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoMoviles.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles.debug.xcconfig"; sourceTree = "<group>"; };
+		7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoMoviles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
 		D0080CA9225BBCAD00CA9148 /* GearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
 		D0803ED6225F7B4700643534 /* FotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosTableViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		D0803EDE225FBEB200643534 /* VideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewController.swift; sourceTree = "<group>"; };
 		D0803EE0225FC0EB00643534 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelosTableViewController.swift; sourceTree = "<group>"; };
+		D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png"; sourceTree = "<group>"; };
 		D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 		D0E777BD2243663B009E2ACB /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
@@ -69,17 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04AB52C06264A30EA28A7FD /* Pods_ProyectoMoviles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E392EDD2095125C5CFB976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35ED97692240DC130032088C = {
 			isa = PBXGroup;
 			children = (
 				35ED97742240DC130032088C /* ProyectoMoviles */,
 				35ED97732240DC130032088C /* Products */,
+				5ED14BFD02D59E09FFE213CE /* Pods */,
+				18E392EDD2095125C5CFB976 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +113,11 @@
 		35ED97742240DC130032088C /* ProyectoMoviles */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */,
 				35ED97752240DC130032088C /* AppDelegate.swift */,
 				35ED97772240DC130032088C /* ViewController.swift */,
 				35ED97792240DC130032088C /* Main.storyboard */,
+				D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */,
 				D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */,
 				D0803EDE225FBEB200643534 /* VideosTableViewController.swift */,
 				D0803EE0225FC0EB00643534 /* VideosViewController.swift */,
@@ -124,6 +145,16 @@
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
 		};
+		5ED14BFD02D59E09FFE213CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */,
+				28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35ED97842240DC150032088C /* Build configuration list for PBXNativeTarget "ProyectoMoviles" */;
 			buildPhases = (
+				D7F6F50C061DFBBCC762C97E /* [CP] Check Pods Manifest.lock */,
 				35ED976E2240DC130032088C /* Sources */,
 				35ED976F2240DC130032088C /* Frameworks */,
 				35ED97702240DC130032088C /* Resources */,
+				BC71245A7E69D7CAE0FFE82A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,16 +220,71 @@
 				35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */,
 				35ED977D2240DC150032088C /* Assets.xcassets in Resources */,
 				35ED977B2240DC130032088C /* Main.storyboard in Resources */,
+				D0AF60C6227A728D00E0D0D6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC71245A7E69D7CAE0FFE82A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F6F50C061DFBBCC762C97E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoMoviles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35ED976E2240DC130032088C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AF60C4227A702A00E0D0D6 /* LoginViewController.swift in Sources */,
 				D0803EDF225FBEB200643534 /* VideosTableViewController.swift in Sources */,
 				D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */,
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
@@ -360,6 +448,7 @@
 		};
 		35ED97852240DC150032088C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +467,7 @@
 		};
 		35ED97862240DC150032088C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
