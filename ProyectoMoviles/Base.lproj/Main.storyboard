@@ -952,7 +952,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tGa-uG-whN" kind="show" id="riS-zt-yyR"/>
+                                    <segue destination="ZaE-C7-dHR" kind="show" id="niW-Um-hc1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -965,23 +965,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhA-4a-qSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="858"/>
-        </scene>
-        <!--Pokemon View Controller-->
-        <scene sceneID="Ayj-UK-6cU">
-            <objects>
-                <viewController id="tGa-uG-whN" customClass="PokemonViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h8b-jm-cSX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </sceneKitView>
-                    <connections>
-                        <outlet property="scnView" destination="h8b-jm-cSX" id="rkf-Kp-lCJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr6-Wl-48m" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1725" y="858"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rhK-FZ-l9n">
@@ -1160,7 +1143,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmd-R9-B8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.57971014492756" y="-925.44642857142856"/>
+            <point key="canvasLocation" x="-74" y="-1890"/>
+        </scene>
+        <!--Pokemon View Controller-->
+        <scene sceneID="rNJ-uT-zZX">
+            <objects>
+                <viewController id="ZaE-C7-dHR" customClass="PokemonViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="itk-n2-g5s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsX-gk-G7k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UsX-gk-G7k" firstAttribute="leading" secondItem="yKr-IQ-oZf" secondAttribute="leading" id="6jI-VM-ISf"/>
+                            <constraint firstItem="UsX-gk-G7k" firstAttribute="bottom" secondItem="yKr-IQ-oZf" secondAttribute="bottom" id="FCi-Gs-B6b"/>
+                            <constraint firstItem="UsX-gk-G7k" firstAttribute="top" secondItem="itk-n2-g5s" secondAttribute="top" id="ZgY-uM-o8r"/>
+                            <constraint firstItem="UsX-gk-G7k" firstAttribute="trailing" secondItem="yKr-IQ-oZf" secondAttribute="trailing" id="qgX-O1-GIw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yKr-IQ-oZf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="UsX-gk-G7k" id="3r2-3N-ZGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyX-xS-SqU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="858"/>
         </scene>
     </scenes>
     <resources>
