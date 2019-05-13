@@ -48,6 +48,11 @@ class DetalleViewController: UIViewController {
     
     
     
+    @IBAction func HacerLlamda(_ sender: Any) {
+        
+        var url:NSURL = NSURL(string: "tel://015554832020")!
+        UIApplication.shared.openURL(url as URL)
+    }
     
     
      // MARK: - Navigation
