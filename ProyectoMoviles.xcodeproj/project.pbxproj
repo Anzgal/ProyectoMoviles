@@ -11,6 +11,7 @@
 		35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35398F232243A66500375421 /* CrearProyectoViewController.swift */; };
 		359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */; };
 		359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */; };
+		35CC7645228B861900A7978A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CC7644228B861900A7978A /* GoogleService-Info.plist */; };
 		35ED97762240DC130032088C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97752240DC130032088C /* AppDelegate.swift */; };
 		35ED97782240DC130032088C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97772240DC130032088C /* ViewController.swift */; };
 		35ED977B2240DC130032088C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED97792240DC130032088C /* Main.storyboard */; };
@@ -33,7 +34,6 @@
 		D0803EE1225FC0EB00643534 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EE0225FC0EB00643534 /* VideosViewController.swift */; };
 		D0803EE3225FCB7300643534 /* ModelosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */; };
 		D0AF60C4227A702A00E0D0D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */; };
-		D0AF60C6227A728D00E0D0D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */; };
 		D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */; };
 		D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */; };
 		D0E777BE2243663B009E2ACB /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E777BD2243663B009E2ACB /* DetalleViewController.swift */; };
@@ -45,6 +45,7 @@
 		35398F232243A66500375421 /* CrearProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProyectoViewController.swift; sourceTree = "<group>"; };
 		359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoCreadoViewController.swift; sourceTree = "<group>"; };
 		359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoProyectoViewController.swift; sourceTree = "<group>"; };
+		35CC7644228B861900A7978A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35ED97722240DC130032088C /* ProyectoMoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED97752240DC130032088C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ED97772240DC130032088C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		D0803EE0225FC0EB00643534 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		D0803EE2225FCB7300643534 /* ModelosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelosTableViewController.swift; sourceTree = "<group>"; };
 		D0AF60C3227A702A00E0D0D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png"; sourceTree = "<group>"; };
 		D0E777BB22435B5C009E2ACB /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 		D0E777BD2243663B009E2ACB /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		35ED97742240DC130032088C /* ProyectoMoviles */ = {
 			isa = PBXGroup;
 			children = (
-				D0AF60C5227A728D00E0D0D6 /* GoogleService-Info.plist */,
+				35CC7644228B861900A7978A /* GoogleService-Info.plist */,
 				35ED97752240DC130032088C /* AppDelegate.swift */,
 				35ED97772240DC130032088C /* ViewController.swift */,
 				35ED97792240DC130032088C /* Main.storyboard */,
@@ -225,7 +225,7 @@
 				35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */,
 				35ED977D2240DC150032088C /* Assets.xcassets in Resources */,
 				35ED977B2240DC130032088C /* Main.storyboard in Resources */,
-				D0AF60C6227A728D00E0D0D6 /* GoogleService-Info.plist in Resources */,
+				35CC7645228B861900A7978A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortas.ProyectoMoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortuga.ProyectoMoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -489,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortas.ProyectoMoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alisthortuga.ProyectoMoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

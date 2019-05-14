@@ -40,6 +40,17 @@ class InfoperViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ actividades: UITextField) -> Bool{
+        
+        actividades.resignFirstResponder()
+        return(true)
+    }
+    
+    
     
     @IBAction func cargarDatos(_ sender: UIButton) {
         /*lectura*/

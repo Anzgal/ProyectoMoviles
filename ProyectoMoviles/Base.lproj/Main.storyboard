@@ -1289,7 +1289,6 @@
         <image name="proyectos1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jVw-Pz-M0E"/>
         <segue reference="G4n-HP-GKD"/>
     </inferredMetricsTieBreakers>
 </document>
