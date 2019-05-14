@@ -9,6 +9,8 @@
 import UIKit
 import EventKit
 import UserNotifications
+import Firebase
+import FirebaseDatabase
 
 class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
     
@@ -19,6 +21,12 @@ class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var actividades: UITextField!
     
     @IBOutlet weak var fin: UIDatePicker!
+    
+    @IBOutlet weak var integrantes: UITextField!
+    
+    @IBOutlet weak var roles: UITextField!
+    
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +50,58 @@ class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
         
         actividades.resignFirstResponder()
         return(true)
+    }
+    
+    
+    @IBAction func GuardarDatos(_ sender: Any) {
+        
+        //Para la identificación del path se utilizará el User Id del usuario actual
+        let userid = Auth.auth().currentUser?.uid
+        //Obtener el texto introducido por el usuario
+        //Hace falta verificar que el texto no sea nulo
+        let np:String = self.nombreProyecto.text!
+        let it:String = self.integrantes.text!
+        let rol:String = self.roles.text!
+        let act:String = self.actividades.text!
+        let fi:Date = self.inicio.date
+        let ft:Date = self.fin.date
+        
+        
+        //Relizar la actualización en la BD
+        ref.child("Usuarios/"+userid!).updateChildValues(["nombreProyecto":np, "inicio":fi, "actividades":act, "roles":rol, "fin":ft, "integrantes":it])
+        //Notificar al usuario que la actualización fue exitosa
+        let alert = UIAlertController(title: "Guardar", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "continue", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+        
+        
+    }
+    
+    @IBAction func CargarDatos(_ sender: Any) {
+        /*lectura*/
+        
+        //Para la identificación del path se utilizará el User Id del usuario actual
+        let userid = Auth.auth().currentUser?.uid
+        // El método .observeSingleEvent realiza una consulta puntual de los valores de los atributos hijos del path
+        ref.child("Usuarios").child(userid!).observeSingleEvent(of: .value){
+            (snapshot) in
+            let datos = snapshot.value as? [String:Any]
+            
+            self.nombreProyecto.text = datos?["nombreProyecto"] as! String
+            self.integrantes.text = datos?["integrantes"] as! String
+            self.roles.text = datos?["roles"] as! String
+            self.fin.date = datos?["fin"] as! Date
+            self.inicio.date = datos?["inicio"] as! Date
+            self.actividades.text = datos?["actividades"] as! String
+            
+            
+        }
+        
+        
+        
+        
     }
     
     

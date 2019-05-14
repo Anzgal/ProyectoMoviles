@@ -793,6 +793,7 @@
                                 <state key="normal" title="Hecho"/>
                                 <connections>
                                     <action selector="CrearEvento:" destination="Ak2-vQ-TzU" eventType="touchUpInside" id="UUU-Oe-8nV"/>
+                                    <action selector="GuardarDatos:" destination="Ak2-vQ-TzU" eventType="touchUpInside" id="sTj-Mf-bFz"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Opcional" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHw-nD-qa5">
@@ -827,6 +828,9 @@
                                 <rect key="frame" x="128" y="785" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cargar"/>
+                                <connections>
+                                    <action selector="CargarDatos:" destination="Ak2-vQ-TzU" eventType="touchUpInside" id="wSc-cT-Fpu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -836,12 +840,14 @@
                         <outlet property="actividades" destination="wet-ls-9Q2" id="CkI-Ez-e9J"/>
                         <outlet property="fin" destination="Vhz-Z8-jKw" id="GI6-cJ-BWU"/>
                         <outlet property="inicio" destination="Gd8-DV-HRH" id="CEc-Ab-nYD"/>
+                        <outlet property="integrantes" destination="3wE-2s-zce" id="6y0-4a-tRb"/>
                         <outlet property="nombreProyecto" destination="Uic-VP-Gt9" id="gh8-Kc-ynT"/>
+                        <outlet property="roles" destination="cHw-nD-qa5" id="aro-4j-jqJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcm-Ur-kko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4095.652173913044" y="-1527.4553571428571"/>
+            <point key="canvasLocation" x="684" y="-1890"/>
         </scene>
         <!--Proyectos Table View Controller-->
         <scene sceneID="W6a-dz-Igu">
