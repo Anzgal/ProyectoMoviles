@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3531CC81228B425400172101 /* LlamadaYCorreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531CC80228B425400172101 /* LlamadaYCorreoViewController.swift */; };
 		35398F242243A66500375421 /* CrearProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35398F232243A66500375421 /* CrearProyectoViewController.swift */; };
 		359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */; };
 		359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		28DED1F3B815F2979E5F2386 /* Pods-ProyectoMoviles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoMoviles.release.xcconfig"; path = "Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles.release.xcconfig"; sourceTree = "<group>"; };
+		3531CC80228B425400172101 /* LlamadaYCorreoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamadaYCorreoViewController.swift; sourceTree = "<group>"; };
 		35398F232243A66500375421 /* CrearProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProyectoViewController.swift; sourceTree = "<group>"; };
 		359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoCreadoViewController.swift; sourceTree = "<group>"; };
 		359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoProyectoViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				35FD7608225E61510033F710 /* ProyectosTableViewController.swift */,
 				35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */,
 				35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */,
+				3531CC80228B425400172101 /* LlamadaYCorreoViewController.swift */,
 			);
 			path = ProyectoMoviles;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				D0AF60C4227A702A00E0D0D6 /* LoginViewController.swift in Sources */,
 				D0803EDF225FBEB200643534 /* VideosTableViewController.swift in Sources */,
+				3531CC81228B425400172101 /* LlamadaYCorreoViewController.swift in Sources */,
 				D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */,
 				D0E777BC22435B5C009E2ACB /* TableTableViewController.swift in Sources */,
 				35FD7609225E61510033F710 /* ProyectosTableViewController.swift in Sources */,

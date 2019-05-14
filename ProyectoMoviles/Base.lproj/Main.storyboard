@@ -304,15 +304,6 @@
                                     <segue destination="Ogt-O7-QyC" kind="show" identifier="fotosTableSegue" id="sQE-Hd-cEl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
-                                <rect key="frame" x="160" y="716" width="93" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Videos 360"/>
-                                <connections>
-                                    <segue destination="zkr-BK-aSW" kind="show" identifier="videos360TableSegue" id="hfa-b5-SAS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-oZ-2wj">
                                 <rect key="frame" x="155" y="635" width="103" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -323,7 +314,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgM-HI-Af4">
-                                <rect key="frame" x="159" y="790" width="96" height="34"/>
+                                <rect key="frame" x="154" y="444" width="96" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Modelos 3d"/>
@@ -331,13 +322,21 @@
                                     <segue destination="uJi-t7-vgO" kind="show" identifier="modelosTablaSegue" id="WUR-3N-uhY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-mj-NEi">
-                                <rect key="frame" x="144" y="433" width="122" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-mj-NEi">
+                                <rect key="frame" x="138" y="746" width="129" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Hacer llamada"/>
+                                <state key="normal" image="contacto logo"/>
                                 <connections>
-                                    <action selector="HacerLlamda:" destination="DYM-C8-RXw" eventType="touchUpInside" id="yLe-kC-pv9"/>
+                                    <segue destination="PJf-GX-Z2O" kind="show" id="OU8-Ug-iIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
+                                <rect key="frame" x="157" y="687" width="93" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Videos 360"/>
+                                <connections>
+                                    <segue destination="zkr-BK-aSW" kind="show" identifier="videos360TableSegue" id="hfa-b5-SAS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -562,6 +561,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwc-Qr-egZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2097" y="1655"/>
+        </scene>
+        <!--LlamadaY Correo View Controller-->
+        <scene sceneID="hOB-ht-AK2">
+            <objects>
+                <viewController id="PJf-GX-Z2O" customClass="LlamadaYCorreoViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lp3-eI-Kxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55v-mE-4Un">
+                                <rect key="frame" x="0.0" y="70" width="414" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Llamar logo">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HacerLlamda:" destination="PJf-GX-Z2O" eventType="touchUpInside" id="pHl-rG-DbT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-Y2-Itz">
+                                <rect key="frame" x="0.0" y="535" width="414" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="correo logo"/>
+                                <connections>
+                                    <action selector="MandarCorreo:" destination="PJf-GX-Z2O" eventType="touchUpInside" id="jbU-Id-DUT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="edo-vg-BQ7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEO-3h-ORy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820.28985507246387" y="1661.3839285714284"/>
         </scene>
         <!--Equipamiento Table View Controller-->
         <scene sceneID="b4B-vg-rLq">
@@ -1188,10 +1223,13 @@
         <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="200" height="200"/>
         <image name="21112-topshot1" width="340" height="605"/>
         <image name="Lab-PNG-High-Quality-Image" width="512" height="477"/>
+        <image name="Llamar logo" width="225" height="225"/>
         <image name="User-info" width="512" height="512"/>
         <image name="about-png-images" width="1000" height="1000"/>
         <image name="black_transparent" width="1200" height="730"/>
         <image name="cedetec2" width="234" height="450"/>
+        <image name="contacto logo" width="225" height="225"/>
+        <image name="correo logo" width="225" height="225"/>
         <image name="inside-logout-icon" width="256" height="256"/>
         <image name="logo-Tec" width="1200" height="600"/>
         <image name="machine_learning1" width="1000" height="1000"/>
@@ -1199,7 +1237,6 @@
         <image name="proyectos1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jVw-Pz-M0E"/>
         <segue reference="G4n-HP-GKD"/>
     </inferredMetricsTieBreakers>
 </document>
