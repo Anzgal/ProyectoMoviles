@@ -78,6 +78,9 @@ class DetalleViewController: UIViewController {
         }else if segue.identifier == "modelosTablaSegue" {
             let siguiente = segue.destination as! ModelosTableViewController
             siguiente.tableArray = modelosRecibido
+        }else if segue.identifier == "contactoLlamada" {
+            let siguiente = segue.destination as! LlamadaYCorreoViewController
+            siguiente.correoRecibido = emailRecibido
         }
         
      }

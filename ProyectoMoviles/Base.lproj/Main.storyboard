@@ -145,7 +145,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Eke-l2-SXu" kind="show" id="jVw-Pz-M0E"/>
+                                    <segue destination="oZA-b3-0YF" kind="show" id="qVA-Wp-LTN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-n1-zzB">
@@ -315,7 +315,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contacto logo"/>
                                 <connections>
-                                    <segue destination="PJf-GX-Z2O" kind="show" id="OU8-Ug-iIg"/>
+                                    <segue destination="PJf-GX-Z2O" kind="show" identifier="contactoLlamada" id="OU8-Ug-iIg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
@@ -467,35 +467,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLh-6P-AQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="-48"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="B3b-To-cqX">
-            <objects>
-                <viewController id="Eke-l2-SXu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zHA-df-XcR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21112-topshot1" translatesAutoresizingMaskIntoConstraints="NO" id="jOk-FT-set">
-                                <rect key="frame" x="0.0" y="32" width="414" height="679"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-dI-F6o">
-                                <rect key="frame" x="161" y="759" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Detect Image"/>
-                                <connections>
-                                    <segue destination="UFH-1E-NwN" kind="show" id="G4n-HP-GKD"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5WP-so-Beo"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEc-Md-wyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4672" y="-808"/>
         </scene>
         <!--Panono View Controller-->
         <scene sceneID="2e2-qg-Z81">
@@ -873,7 +844,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sii-hf-YIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613" y="-1527"/>
+            <point key="canvasLocation" x="683" y="-1626"/>
         </scene>
         <!--Detalle Proyecto View Controller-->
         <scene sceneID="YEY-fu-oVg">
@@ -1083,7 +1054,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OV5-Jd-K5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-703" y="-808"/>
+            <point key="canvasLocation" x="-1633" y="-907"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pJB-Yf-qJs">
@@ -1102,27 +1073,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPF-RL-d5c">
-                                <rect key="frame" x="46" y="507" width="338" height="259"/>
+                                <rect key="frame" x="46" y="564" width="308" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="New activity"/>
                                 <connections>
                                     <segue destination="Ak2-vQ-TzU" kind="show" id="vh2-42-Hzj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proyecto Realizados" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-iH-akg">
-                                <rect key="frame" x="88" y="393" width="236" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Proyecto Realizados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-r3-Lmj">
+                                <rect key="frame" x="114" y="388" width="202" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nueva Actividad a Realizar" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQ6-3K-KNo">
-                                <rect key="frame" x="46" y="792" width="314" height="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siguiente Actividad a Realizar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-o1-BNQ">
+                                <rect key="frame" x="61" y="789" width="293" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="EPN-vl-YHJ"/>
@@ -1130,7 +1101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZC-rk-vJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573.91304347826087" y="-778.125"/>
+            <point key="canvasLocation" x="-355" y="-877"/>
         </scene>
         <!--Infoper View Controller-->
         <scene sceneID="Gzd-F4-NUT">
@@ -1263,10 +1234,34 @@
             </objects>
             <point key="canvasLocation" x="1614" y="858"/>
         </scene>
+        <!--Machine Learning View Controller-->
+        <scene sceneID="qqt-cn-JQO">
+            <objects>
+                <viewController id="oZA-b3-0YF" customClass="MachineLearningViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="797-J1-8UG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Fgh-fE-PG6" appends="YES" id="mqI-i8-wVi"/>
+                        </connections>
+                    </arscnView>
+                    <connections>
+                        <outlet property="sceneView" destination="797-J1-8UG" id="YSt-LT-ogw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfp-Vh-QoS" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Fgh-fE-PG6">
+                    <connections>
+                        <action selector="tapEjecutado:" destination="oZA-b3-0YF" id="BfN-f2-D8b"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-3855" y="-942"/>
+        </scene>
     </scenes>
     <resources>
         <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="200" height="200"/>
-        <image name="21112-topshot1" width="340" height="605"/>
         <image name="360 photo" width="256" height="256"/>
         <image name="360 video" width="200" height="200"/>
         <image name="3d" width="225" height="225"/>
@@ -1288,7 +1283,4 @@
         <image name="proyectos1" width="512" height="512"/>
         <image name="tap" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="G4n-HP-GKD"/>
-    </inferredMetricsTieBreakers>
 </document>

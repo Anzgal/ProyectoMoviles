@@ -9,7 +9,10 @@
 import UIKit
 import MessageUI
 
-class LlamadaYCorreoViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class LlamadaYCorreoViewController: UIViewController,
+MFMailComposeViewControllerDelegate {
+    
+    var correoRecibido = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,7 @@ class LlamadaYCorreoViewController: UIViewController, MFMailComposeViewControlle
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setToRecipients(["andrew@seemuapps.com", "jose.molina@itesm.mx"])
+        mailComposerVC.setToRecipients([correoRecibido, "jose.molina@itesm.mx"])
         mailComposerVC.setSubject("Cedetec")
         mailComposerVC.setMessageBody("Hola buenas tardes,\nMe gustaría apartar el laboratio de cedetec para el dia de mañana.\nSaludos ", isHTML: false)
         
