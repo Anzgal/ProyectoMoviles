@@ -12,6 +12,9 @@
 		359488DD2243B53E00C199DF /* ProyectoCreadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */; };
 		359488DF2243B93400C199DF /* SegundoProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */; };
 		35CC7645228B861900A7978A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CC7644228B861900A7978A /* GoogleService-Info.plist */; };
+		35CC7647228C77DD00A7978A /* IMG_9407.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 35CC7646228C77DD00A7978A /* IMG_9407.PNG */; };
+		35CC7649228C787000A7978A /* IMG_9408.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 35CC7648228C787000A7978A /* IMG_9408.PNG */; };
+		35CC764B228C78D000A7978A /* IMG_9409.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 35CC764A228C78D000A7978A /* IMG_9409.PNG */; };
 		35ED97762240DC130032088C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97752240DC130032088C /* AppDelegate.swift */; };
 		35ED97782240DC130032088C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED97772240DC130032088C /* ViewController.swift */; };
 		35ED977B2240DC130032088C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED97792240DC130032088C /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		359488DC2243B53E00C199DF /* ProyectoCreadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoCreadoViewController.swift; sourceTree = "<group>"; };
 		359488DE2243B93400C199DF /* SegundoProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoProyectoViewController.swift; sourceTree = "<group>"; };
 		35CC7644228B861900A7978A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35CC7646228C77DD00A7978A /* IMG_9407.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_9407.PNG; sourceTree = "<group>"; };
+		35CC7648228C787000A7978A /* IMG_9408.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_9408.PNG; sourceTree = "<group>"; };
+		35CC764A228C78D000A7978A /* IMG_9409.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_9409.PNG; sourceTree = "<group>"; };
 		35ED97722240DC130032088C /* ProyectoMoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED97752240DC130032088C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ED97772240DC130032088C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +137,10 @@
 				D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */,
 				D0803ED6225F7B4700643534 /* FotosTableViewController.swift */,
 				D0080CA9225BBCAD00CA9148 /* GearViewController.swift */,
+				35CC7648228C787000A7978A /* IMG_9408.PNG */,
+				35CC764A228C78D000A7978A /* IMG_9409.PNG */,
 				35ED977C2240DC150032088C /* Assets.xcassets */,
+				35CC7646228C77DD00A7978A /* IMG_9407.PNG */,
 				35FE8E2F225FB48B001E32E5 /* art.scnassets */,
 				D0B078B322420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png */,
 				35ED977E2240DC150032088C /* LaunchScreen.storyboard */,
@@ -220,9 +229,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CC7649228C787000A7978A /* IMG_9408.PNG in Resources */,
+				35CC7647228C77DD00A7978A /* IMG_9407.PNG in Resources */,
 				D0B078B422420AFC00E8A33E /* 12f15d9c-63ff-483a-9e8d-3f5800a94c6b.png in Resources */,
 				35FE8E30225FB48B001E32E5 /* art.scnassets in Resources */,
 				35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */,
+				35CC764B228C78D000A7978A /* IMG_9409.PNG in Resources */,
 				35ED977D2240DC150032088C /* Assets.xcassets in Resources */,
 				35ED977B2240DC130032088C /* Main.storyboard in Resources */,
 				35CC7645228B861900A7978A /* GoogleService-Info.plist in Resources */,

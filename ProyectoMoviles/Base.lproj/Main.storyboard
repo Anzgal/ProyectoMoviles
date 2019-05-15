@@ -245,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email del responsable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtm-cR-qEl">
-                                <rect key="frame" x="118" y="486" width="179" height="21"/>
+                                <rect key="frame" x="120" y="400" width="179" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -280,63 +280,58 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-Qj-tss">
-                                <rect key="frame" x="42" y="515" width="330" height="21"/>
+                                <rect key="frame" x="44" y="429" width="330" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeL-wh-pC2">
-                                <rect key="frame" x="154" y="392" width="105" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeL-wh-pC2">
+                                <rect key="frame" x="20" y="494" width="135" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Equipamiento"/>
+                                <state key="normal" title="Equipamiento" image="equipo"/>
                                 <connections>
                                     <segue destination="W77-Ke-O7e" kind="show" identifier="equipamientoTableSegue" id="x7T-mp-OaY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RT-Wk-mlz">
-                                <rect key="frame" x="183" y="557" width="46" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-oZ-2wj">
+                                <rect key="frame" x="20" y="637" width="140" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Fotos"/>
-                                <connections>
-                                    <segue destination="Ogt-O7-QyC" kind="show" identifier="fotosTableSegue" id="sQE-Hd-cEl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-oZ-2wj">
-                                <rect key="frame" x="155" y="635" width="103" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Videos (Tap)"/>
+                                <state key="normal" title="Videos (Tap)" image="tap"/>
                                 <connections>
                                     <segue destination="Cip-Sj-Phb" kind="show" identifier="videosTableSegue" id="917-1T-ggf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgM-HI-Af4">
-                                <rect key="frame" x="154" y="444" width="96" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgM-HI-Af4">
+                                <rect key="frame" x="226" y="475" width="168" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Modelos 3d"/>
+                                <state key="normal" title="Modelos 3d" image="3d"/>
                                 <connections>
                                     <segue destination="uJi-t7-vgO" kind="show" identifier="modelosTablaSegue" id="WUR-3N-uhY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-mj-NEi">
-                                <rect key="frame" x="138" y="746" width="129" height="124"/>
+                                <rect key="frame" x="20" y="738" width="129" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contacto logo"/>
                                 <connections>
                                     <segue destination="PJf-GX-Z2O" kind="show" id="OU8-Ug-iIg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
-                                <rect key="frame" x="157" y="687" width="93" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-P6-icm">
+                                <rect key="frame" x="239" y="749" width="155" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Videos 360"/>
+                                <state key="normal" title="Videos 360" image="360 video"/>
                                 <connections>
                                     <segue destination="zkr-BK-aSW" kind="show" identifier="videos360TableSegue" id="hfa-b5-SAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RT-Wk-mlz">
+                                <rect key="frame" x="234" y="637" width="153" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fotos" image="360 photo"/>
+                                <connections>
+                                    <segue destination="Ogt-O7-QyC" kind="show" identifier="fotosTableSegue" id="sQE-Hd-cEl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1272,6 +1267,9 @@
     <resources>
         <image name="12f15d9c-63ff-483a-9e8d-3f5800a94c6b" width="200" height="200"/>
         <image name="21112-topshot1" width="340" height="605"/>
+        <image name="360 photo" width="256" height="256"/>
+        <image name="360 video" width="200" height="200"/>
+        <image name="3d" width="225" height="225"/>
         <image name="Finished Projeects" width="225" height="225"/>
         <image name="Lab-PNG-High-Quality-Image" width="512" height="477"/>
         <image name="Llamar logo" width="225" height="225"/>
@@ -1282,11 +1280,13 @@
         <image name="cedetec2" width="234" height="450"/>
         <image name="contacto logo" width="225" height="225"/>
         <image name="correo logo" width="225" height="225"/>
+        <image name="equipo" width="512" height="512"/>
         <image name="inside-logout-icon" width="256" height="256"/>
         <image name="logo-Tec" width="1200" height="600"/>
         <image name="machine_learning1" width="1000" height="1000"/>
         <image name="map-icon_150412" width="260" height="230"/>
         <image name="proyectos1" width="512" height="512"/>
+        <image name="tap" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G4n-HP-GKD"/>
