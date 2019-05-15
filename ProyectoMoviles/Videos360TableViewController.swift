@@ -1,12 +1,13 @@
 //
 //  FotosTableViewController.swift
 //  ProyectoMoviles
-//
+//Hola
 //  Created by Martin Anzures on 4/11/19.
 //  Copyright © 2019 Alister Estrada Cueto. All rights reserved.
 //
 
 import UIKit
+import SwiftSpinner
 
 class Videos360TableViewController: UITableViewController{
     
@@ -61,7 +62,6 @@ extension Videos360TableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         
         if (cell == nil) {
             cell = UITableViewCell(

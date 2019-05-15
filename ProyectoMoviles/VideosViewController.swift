@@ -13,6 +13,7 @@ import AVFoundation
 
 class VideosViewViewController: UIViewController, ARSCNViewDelegate {
     var linkRecibido = ""
+    var flag = false
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -29,7 +30,9 @@ class VideosViewViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+           
         registerGestureRecognizer()
+        
     }
     
     private func registerGestureRecognizer()

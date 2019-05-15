@@ -53,7 +53,7 @@ class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func GuardarDatos(_ sender: Any) {
+    @IBAction func GuardarDatos(_ sender: UIButton) {
         
         //Para la identificación del path se utilizará el User Id del usuario actual
         let userid = Auth.auth().currentUser?.uid
@@ -68,32 +68,31 @@ class CrearProyectoViewController: UIViewController, UITextFieldDelegate {
         
         
         //Relizar la actualización en la BD
-        ref.child("Usuarios/"+userid!).updateChildValues(["nombreProyecto":np, "inicio":fi, "actividades":act, "roles":rol, "fin":ft, "integrantes":it])
+        ref.child("Usuarios/"+userid!).updateChildValues(["nombreProyecto":np, "actividades":act, "roles":rol, "integrantes":it])
         //Notificar al usuario que la actualización fue exitosa
         let alert = UIAlertController(title: "Guardar", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "continue", style: .default, handler: nil))
         
         self.present(alert, animated: true)
+        print("Todo perron")
         
         
     }
     
-    @IBAction func CargarDatos(_ sender: Any) {
+    @IBAction func CargarDatos(_ sender: UIButton) {
         /*lectura*/
         
         //Para la identificación del path se utilizará el User Id del usuario actual
         let userid = Auth.auth().currentUser?.uid
         // El método .observeSingleEvent realiza una consulta puntual de los valores de los atributos hijos del path
-        ref.child("Usuarios").child(userid!).observeSingleEvent(of: .value){
+        ref.child("Usuarios/").child(userid!).observeSingleEvent(of: .value){
             (snapshot) in
             let datos = snapshot.value as? [String:Any]
             
             self.nombreProyecto.text = datos?["nombreProyecto"] as! String
             self.integrantes.text = datos?["integrantes"] as! String
             self.roles.text = datos?["roles"] as! String
-            self.fin.date = datos?["fin"] as! Date
-            self.inicio.date = datos?["inicio"] as! Date
             self.actividades.text = datos?["actividades"] as! String
             
             
