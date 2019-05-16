@@ -13,8 +13,14 @@ import AVFoundation
 
 class VideosViewViewController: UIViewController, ARSCNViewDelegate {
     var linkRecibido = ""
-    var flag = false
+    
+    
+    
     @IBOutlet var sceneView: ARSCNView!
+    
+    @IBAction func playVideo(_ sender: UIButton) {
+        self.videoNodo.play()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +43,19 @@ class VideosViewViewController: UIViewController, ARSCNViewDelegate {
     
     private func registerGestureRecognizer()
     {
-        let tapGesto = UITapGestureRecognizer(target: self, action: #selector(tapEnPantalla))
-        self.sceneView.addGestureRecognizer(tapGesto)
+        
+            let tapGesto = UITapGestureRecognizer(target: self, action: #selector(tapEnPantalla))
+            self.sceneView.addGestureRecognizer(tapGesto)
+        
+        
     }
     
     @objc func tapEnPantalla(manejador:UIGestureRecognizer)
     {
+        struct Holder{static var called = false}
+        if !Holder.called {
+            Holder.called = true
+            //do the thing
         //currentFrame es la imagen actual de la camara
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
         
@@ -87,7 +100,10 @@ class VideosViewViewController: UIViewController, ARSCNViewDelegate {
         
         pantallaPlanaNodo.eulerAngles = SCNVector3(Double.pi, 0, 0)
         self.sceneView.scene.rootNode.addChildNode(pantallaPlanaNodo)
+            
+        }
         
+    
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

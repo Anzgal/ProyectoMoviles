@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz9-HM-09z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2097" y="-808"/>
+            <point key="canvasLocation" x="-2530" y="-1284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lYp-Tf-pIi">
@@ -145,7 +145,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oZA-b3-0YF" kind="show" id="qVA-Wp-LTN"/>
+                                    <segue destination="WuE-xz-Pvp" kind="show" id="yuV-v7-SYe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-n1-zzB">
@@ -663,6 +663,19 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-uh-KJr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jED-4m-u7p">
+                                <rect key="frame" x="58" y="788" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="KHx-3L-kvW" eventType="touchUpInside" id="zAw-qi-GQm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-rH-1o6">
+                                <rect key="frame" x="296" y="788" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pause"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -813,7 +826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcm-Ur-kko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-1890"/>
+            <point key="canvasLocation" x="725" y="-2392"/>
         </scene>
         <!--Proyectos Table View Controller-->
         <scene sceneID="W6a-dz-Igu">
@@ -1203,7 +1216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmd-R9-B8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="-1890"/>
+            <point key="canvasLocation" x="-355" y="-2105"/>
         </scene>
         <!--Pokemon View Controller-->
         <scene sceneID="rNJ-uT-zZX">
@@ -1235,29 +1248,69 @@
             <point key="canvasLocation" x="1614" y="858"/>
         </scene>
         <!--Machine Learning View Controller-->
-        <scene sceneID="qqt-cn-JQO">
+        <scene sceneID="oAH-2C-kLm">
             <objects>
-                <viewController id="oZA-b3-0YF" customClass="MachineLearningViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="797-J1-8UG">
+                <viewController id="OTK-Bh-3Cu" customClass="MachineLearningViewController" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="McO-Y0-WYe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-qO-VNu">
+                                <rect key="frame" x="0.0" y="171" width="414" height="633"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIi-nd-2dk">
+                                <rect key="frame" x="0.0" y="116" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8P-m8-do7">
+                                <rect key="frame" x="10" y="812" width="394" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LaF-PJ-hwE"/>
+                    </view>
+                    <connections>
+                        <outlet property="Descripcio" destination="T8P-m8-do7" id="VOu-Lv-kCR"/>
+                        <outlet property="nombre" destination="sIi-nd-2dk" id="ZOm-SZ-lgf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sen-6g-ZGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Fgh-fE-PG6"/>
+            </objects>
+            <point key="canvasLocation" x="-4542.0289855072469" y="-1221.4285714285713"/>
+        </scene>
+        <!--Machine Learning-->
+        <scene sceneID="adM-Ey-M77">
+            <objects>
+                <viewController id="WuE-xz-Pvp" customClass="MachineLearning" customModule="ProyectoMoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AoM-Sn-ReO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="Fgh-fE-PG6" appends="YES" id="mqI-i8-wVi"/>
+                            <outletCollection property="gestureRecognizers" destination="paU-Np-eI1" appends="YES" id="aQ2-HC-CF2"/>
                         </connections>
                     </arscnView>
                     <connections>
-                        <outlet property="sceneView" destination="797-J1-8UG" id="YSt-LT-ogw"/>
+                        <outlet property="sceneView" destination="AoM-Sn-ReO" id="sSi-Oh-Eut"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tfp-Vh-QoS" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Fgh-fE-PG6">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FsJ-Yz-tbC" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="paU-Np-eI1">
                     <connections>
-                        <action selector="tapEjecutado:" destination="oZA-b3-0YF" id="BfN-f2-D8b"/>
+                        <action selector="tapEjecutado:" destination="WuE-xz-Pvp" id="1PU-2y-ccG"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-3855" y="-942"/>
+            <point key="canvasLocation" x="-3813" y="-1221"/>
         </scene>
     </scenes>
     <resources>

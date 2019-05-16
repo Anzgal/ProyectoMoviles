@@ -1,16 +1,17 @@
 //
-//  MachineLearningViewController.swift
-//  ProyectoMoviles
+//  ViewController.swift
+//  ML+AR
 //
-//  Created by Alister Estrada Cueto on 5/15/19.
-//  Copyright © 2019 Alister Estrada Cueto. All rights reserved.
+//  Created by molina on 29/03/18.
+//  Copyright © 2018 Tec de Monterrey. All rights reserved.
 //
+
 import UIKit
 import SceneKit
 import ARKit
 import Vision
 
-class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
+class MachineLearning: UIViewController, ARSCNViewDelegate {
     
     private var hitTestResult: ARHitTestResult!
     private var resnetModel = UbicatecML()
@@ -19,6 +20,28 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
     //2. registrar el gesto de tap
     //3. instanciar el modelo y enviar la imagen
     //4. Presentar los datos resultados del modelo
+    
+    let datosStringURL = "http://martinmolina.com.mx/201911/data/UbicaTec/MLUbicatec.json"
+
+    
+    func JSONParseArray(_ string: String) -> [AnyObject]{
+        if let data = string.data(using: String.Encoding.utf8){
+            
+            do{
+                
+                if let array = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)  as? [AnyObject] {
+                    return array
+                }
+            }catch{
+                
+                print("error")
+                //handle errors here
+            }
+        }
+        return [AnyObject]()
+        
+    }
+    
     
     @IBAction func tapEjecutado(_ sender: UITapGestureRecognizer) {
         //obtener la vista donde se va a trabajar
@@ -45,6 +68,7 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
     
     private func performVisionRequest(pixelBuffer: CVPixelBuffer)
     {
+
         //inicializar el modelo de ML al modelo usado, en este caso resnet
         let visionModel = try! VNCoreMLModel(for: resnetModel.model)
         let request = VNCoreMLRequest(model: visionModel) { request, error in
@@ -60,8 +84,31 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
             //obtener el mejor resultado
             let observation = observations.first as! VNClassificationObservation
             
+            
+            
+            
+            
+            
+            
+            let datosURL = URL(string: self.datosStringURL)
+            let data = try? Data(contentsOf: datosURL!)
+            
+            let datosObj = try! JSONSerialization.jsonObject(with: data!, options: [])
+            let dictionary = datosObj as? [String: Any]
+            /*let name = dictionary!["Amplificador"]
+            let developer = dictionary!["Barra de Contacto"]
+            let typing = dictionary!["CableLightning"]
+            let website = dictionary!["DVD"]*/
+            
+            
+            
+            
+            
+            
+            
             print("Nombre \(observation.identifier) confianza \(observation.confidence)")
-            self.desplegarTexto(entrada: observation.identifier)
+            
+            self.desplegarTexto(entrada: dictionary![observation.identifier] as! String)
             
         }
         //la imagen que se pasará al modelo sera recortada para quedarse con el centro
@@ -72,6 +119,7 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
         DispatchQueue.global().async {
             try! imageRequestHandler.perform(self.visionRequests)
             
+            
         }
         
     }
@@ -80,6 +128,7 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
         
         let letrero = SCNText(string: entrada
             , extrusionDepth: 0)
+        letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
         letrero.firstMaterial?.diffuse.contents = UIColor.blue
         letrero.firstMaterial?.specular.contents = UIColor.white
         letrero.firstMaterial?.isDoubleSided = true
@@ -97,6 +146,11 @@ class MachineLearningViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        //print("JSON data is:\(datosObj)")
         
         // Set the view's delegate
         sceneView.delegate = self
