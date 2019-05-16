@@ -174,7 +174,7 @@ class TableTableViewController: UITableViewController, UISearchResultsUpdating {
         print(videos360)
         let videos:String = objetoDato["Videos"] as! String
         print(videos)
-        let modelos:[String] = objetoDato["Modelos"] as! [String]
+        let modelos:String = objetoDato["Modelos"] as! String
         print(modelos)
        
         

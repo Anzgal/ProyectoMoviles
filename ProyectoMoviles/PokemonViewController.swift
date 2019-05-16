@@ -14,7 +14,7 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
-    var receiveModelURL = "http://martinmolina.com.mx/201911/data/UbicaTec/Llave.scn"
+    var linkRecibido = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,7 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
                  self.sceneView.scene = escenaModelo
                  modelNode = escenaModelo.rootNode.childNode(withName: "nodoPrincipal", recursively: true)!
                  node.addChildNode(modelNode)*/
-                let myUrl = NSURL(string: self.receiveModelURL)
+                let myUrl = NSURL(string: self.linkRecibido)
                 let escenaModelo = try SCNScene(url: myUrl! as URL, options: nil)
                 let nodoPrincipal = escenaModelo.rootNode.childNode(withName: "nodoPrincipal", recursively: true)!
                 node.addChildNode(nodoPrincipal)

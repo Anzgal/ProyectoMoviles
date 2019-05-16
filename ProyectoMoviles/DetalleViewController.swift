@@ -19,7 +19,7 @@ class DetalleViewController: UIViewController {
     var emailRecibido = ""
     var videos360Recibido = ""
     var videosRecibido = ""
-    var modelosRecibido = [String] ()
+    var modelosRecibido = ""
     //var panonoRecibido = ""
     //var gearRecibido = ""
     
