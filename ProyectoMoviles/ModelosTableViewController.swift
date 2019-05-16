@@ -68,7 +68,7 @@ extension ModelosTableViewController {
                 style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         }
         let objetoDatos = nuevoArray![indexPath.row] as! [String: Any]
-        let s:String = objetoDatos["Video"] as! String
+        let s:String = objetoDatos["Modelo"] as! String
         cell.textLabel?.text=s
         return cell
         
