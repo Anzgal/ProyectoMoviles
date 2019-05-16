@@ -13,7 +13,7 @@ import AVFoundation
 
 class VideosViewViewController: UIViewController, ARSCNViewDelegate {
     var linkRecibido = ""
-    
+    var videoNodo = SKVideoNode()
     
     
     @IBOutlet var sceneView: ARSCNView!
@@ -22,6 +22,9 @@ class VideosViewViewController: UIViewController, ARSCNViewDelegate {
         self.videoNodo.play()
     }
     
+    @IBAction func pauseVideo(_ sender: UIButton) {
+        self.videoNodo.pause()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,7 +72,7 @@ class VideosViewViewController: UIViewController, ARSCNViewDelegate {
         print(player.isMuted)
         
         // crear un nodo capaz de reporducir un video
-        let videoNodo = SKVideoNode(url: url!)
+        videoNodo = SKVideoNode(url: url!)
         //let videoNodo = SKVideoNode(fileNamed: "CheeziPuffs.mov")
         //let videoNodo = SKVideoNode(avPlayer: player)
         videoNodo.play() //ejecutar play al momento de presentarse

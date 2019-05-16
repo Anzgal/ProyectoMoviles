@@ -663,18 +663,21 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-uh-KJr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jED-4m-u7p">
-                                <rect key="frame" x="58" y="788" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jED-4m-u7p">
+                                <rect key="frame" x="41" y="715" width="122" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play" image="play"/>
                                 <connections>
                                     <action selector="playVideo:" destination="KHx-3L-kvW" eventType="touchUpInside" id="zAw-qi-GQm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-rH-1o6">
-                                <rect key="frame" x="296" y="788" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-rH-1o6">
+                                <rect key="frame" x="217" y="695" width="169" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pause"/>
+                                <state key="normal" title="Pause" image="pause"/>
+                                <connections>
+                                    <action selector="pauseVideo:" destination="KHx-3L-kvW" eventType="touchUpInside" id="rhl-vJ-QvL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -692,7 +695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xn-FC-4CF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4725" y="858"/>
+            <point key="canvasLocation" x="-4727.536231884058" y="857.8125"/>
         </scene>
         <!--Crear Proyecto View Controller-->
         <scene sceneID="d9u-WU-eKF">
@@ -1333,6 +1336,8 @@
         <image name="logo-Tec" width="1200" height="600"/>
         <image name="machine_learning1" width="1000" height="1000"/>
         <image name="map-icon_150412" width="260" height="230"/>
+        <image name="pause" width="512" height="512"/>
+        <image name="play" width="1024" height="1024"/>
         <image name="proyectos1" width="512" height="512"/>
         <image name="tap" width="512" height="512"/>
     </resources>
