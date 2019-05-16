@@ -41,6 +41,11 @@ class Videos360ViewController: UIViewController, ARSCNViewDelegate {
     
     @objc func tapEnPantalla(manejador:UIGestureRecognizer)
     {
+        
+        struct Holder{static var called = false}
+        if !Holder.called {
+            Holder.called = true
+            //do the thing
         //currentFrame es la imagen actual de la camara
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
         
@@ -109,6 +114,7 @@ class Videos360ViewController: UIViewController, ARSCNViewDelegate {
         
         //pantallaPlanaNodo.eulerAngles = SCNVector3(Double.pi, 0, 0)
         self.sceneView.scene.rootNode.addChildNode(tierra)
+        }
         
     }
     override func viewWillAppear(_ animated: Bool) {
