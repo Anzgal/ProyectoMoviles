@@ -36,7 +36,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate{
         
         let cl = CLLocationCoordinate2DMake(19.2835, -99.1354)
         
-        map.region = MKCoordinateRegion(center: cl, latitudinalMeters: 2000, longitudinalMeters: 2000)
+        map.region = MKCoordinateRegionMakeWithDistance(cl, 2000, 2000)
         
         let tacos = MKPointAnnotation()
         tacos.coordinate = cl

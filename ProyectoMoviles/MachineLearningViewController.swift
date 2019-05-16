@@ -128,7 +128,6 @@ class MachineLearning: UIViewController, ARSCNViewDelegate {
         
         let letrero = SCNText(string: entrada
             , extrusionDepth: 0)
-        letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
         letrero.firstMaterial?.diffuse.contents = UIColor.blue
         letrero.firstMaterial?.specular.contents = UIColor.white
         letrero.firstMaterial?.isDoubleSided = true
