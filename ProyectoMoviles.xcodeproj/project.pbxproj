@@ -24,6 +24,8 @@
 		35FD760D225F24870033F710 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */; };
 		35FE8E30225FB48B001E32E5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FE8E2F225FB48B001E32E5 /* art.scnassets */; };
 		35FE8E32225FB58E001E32E5 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */; };
+		391A6196228DE96F00A4A5F3 /* keyCollada in Resources */ = {isa = PBXBuildFile; fileRef = 391A6195228DE96F00A4A5F3 /* keyCollada */; };
+		391A6198228DE98600A4A5F3 /* Roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 391A6197228DE98600A4A5F3 /* Roughness.png */; };
 		A04AB52C06264A30EA28A7FD /* Pods_ProyectoMoviles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */; };
 		D0080CA8225BAF6800CA9148 /* PanonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */; };
 		D0080CAA225BBCAD00CA9148 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080CA9225BBCAD00CA9148 /* GearViewController.swift */; };
@@ -62,6 +64,8 @@
 		35FD760C225F24870033F710 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProyectoViewController.swift; sourceTree = "<group>"; };
 		35FE8E2F225FB48B001E32E5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		35FE8E31225FB58E001E32E5 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		391A6195228DE96F00A4A5F3 /* keyCollada */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keyCollada; sourceTree = "<group>"; };
+		391A6197228DE98600A4A5F3 /* Roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Roughness.png; sourceTree = "<group>"; };
 		4AF885C573A4B2860453E19F /* Pods-ProyectoMoviles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoMoviles.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoMoviles/Pods-ProyectoMoviles.debug.xcconfig"; sourceTree = "<group>"; };
 		7810B5F6F0012CDEDA55AFE3 /* Pods_ProyectoMoviles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoMoviles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0080CA7225BAF6800CA9148 /* PanonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanonoViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 				D0803EDE225FBEB200643534 /* VideosTableViewController.swift */,
 				D0803EE0225FC0EB00643534 /* VideosViewController.swift */,
 				D0803EDC225FB82000643534 /* Videos360ViewController.swift */,
+				391A6197228DE98600A4A5F3 /* Roughness.png */,
 				D0803EDA225FB59900643534 /* Videos360TableViewController.swift */,
+				391A6195228DE96F00A4A5F3 /* keyCollada */,
 				D0803ED8225F89A500643534 /* EquipamientoTableViewController.swift */,
 				D0803ED6225F7B4700643534 /* FotosTableViewController.swift */,
 				D0080CA9225BBCAD00CA9148 /* GearViewController.swift */,
@@ -231,6 +237,8 @@
 				35ED97802240DC150032088C /* LaunchScreen.storyboard in Resources */,
 				35ED977D2240DC150032088C /* Assets.xcassets in Resources */,
 				35ED977B2240DC130032088C /* Main.storyboard in Resources */,
+				391A6196228DE96F00A4A5F3 /* keyCollada in Resources */,
+				391A6198228DE98600A4A5F3 /* Roughness.png in Resources */,
 				35CC7645228B861900A7978A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
