@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  Perlas
+//  ARMarkerViewController.swift
+//  OrganizaTec2.0
 //
-//  Created by molina on 3/28/19.
-//  Copyright © 2019 Tec de Monterrey. All rights reserved.
+//  Created by molina  on 5/2/19.
+//  Copyright © 2019 Santiago Gutierrez Barcenas. All rights reserved.
 //
 
 import UIKit
@@ -13,6 +13,8 @@ import ARKit
 class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
+    
+    var receiveModelURL = "http://martinmolina.com.mx/201911/data/UbicaTec/Pokemon.scn"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +26,10 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/Llave.scn")!
+        //let scene = SCNScene(named: "art.scnassets/fabrica.dae")!
         
         // Set the scene to the view
-        sceneView.scene = scene
+        //sceneView.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,14 +60,20 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
     private func agregarModelo(to node:SCNNode, refImage:ARReferenceImage ){
         DispatchQueue.global().async {
-            let escenaModelo =  SCNScene(named: "art.scnassets/bolt.dae")!
-            //encontrar el nodo principal
-            let nodoPrincipal = escenaModelo.rootNode.childNode(withName: "Brazalete", recursively: true)!
-            node.addChildNode(nodoPrincipal)
-        }
-        
-        
-    }
+            //var modelNode = SCNNode()
+            do {
+                /*let myUrl = NSURL(string: self.receiveModelURL)
+                 let escenaModelo = try SCNScene(url: myUrl! as URL, options: nil)
+                 self.sceneView.scene = escenaModelo
+                 modelNode = escenaModelo.rootNode.childNode(withName: "nodoPrincipal", recursively: true)!
+                 node.addChildNode(modelNode)*/
+                let myUrl = NSURL(string: self.receiveModelURL)
+                let escenaModelo = try SCNScene(url: myUrl! as URL, options: nil)
+                let nodoPrincipal = escenaModelo.rootNode.childNode(withName: "nodoPrincipal", recursively: true)!
+                node.addChildNode(nodoPrincipal)
+            }catch {}
+        }}
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
