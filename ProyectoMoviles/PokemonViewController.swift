@@ -14,7 +14,7 @@ class PokemonViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
-    var receiveModelURL = "http://martinmolina.com.mx/201911/data/UbicaTec/Pokemon.scn"
+    var receiveModelURL = "http://martinmolina.com.mx/201911/data/UbicaTec/Llave.scn"
     
     override func viewDidLoad() {
         super.viewDidLoad()
